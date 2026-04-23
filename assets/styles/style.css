@@ -1,5 +1,14 @@
 :root {
-    --font-primary: "Play", sans-serif;
+    --font-primary: "Oswald", sans-serif;
+
+    /*Темная тема*/
+    --color-60: #0d0d0d;
+    --color-60-black: #101214;
+    --color-30: #ebe4da;
+    --color-10: #d7cfc4;
+
+    /* тестовая разметка */
+    --border-test: 1px red dashed;
 }
 
 * {
@@ -15,15 +24,91 @@ a {
 
 body {
     font-family: var(--font-primary);
-    background-color: var(--color);
+    background-color: var(--color-60);
+    /* background-image: url('../img/fonimg.jpg');
+    background-repeat: repeat;
+    background-size: auto; */
     line-height: 1.6;
     overflow-x: hidden;
 }
-
-.bold {
-    font-family: var(--font-primary);
+/* Навигация */
+.navig {
+    width: 80%;
+    margin-left: 10%;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    border: var(--border-test);
 }
 
-.fon {
-    background: url(Airbrush-IMAGE-ENHANCER-1774548934799-1774548934799.png);
+.navig_logo {
+    width: 70px;
+}
+
+.navig_rid {
+    display: flex;
+    height: auto;
+    border: var(--border-test);
+    margin: auto;
+}
+
+.navig_rid a {
+    height: 100%;
+    width: 70px;
+    color: var(--color-10);
+    border: var(--border-test);
+    align-items: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.logo-kino {
+    width: 80%;
+    height: auto;
+    border: var(--border-test);
+    font-family: var(--font-primary);
+    font-size: 500px;
+    color: var(--color-10);
+    margin-left: 10%;
+    text-align: center;
+    z-index: 1;
+}
+
+.logo-cov{
+    margin-top: -420px;
+    margin-left: 650px;
+    border: var(--border-test);
+    z-index: 2;
+}
+
+.ware {
+    width: 100%;
+    margin-top: -210px;
+    z-index: 3;
+}
+
+.fon-2 {
+    background-color: var(--color-30);
+    width: 100%;
+    min-height: 800px;
+    margin-top: -10px;
+    z-index: 4;
+    font-size: 200px;
+}
+
+.ware2 img{
+    width: 100%;
+    z-index: 5;
+}
+
+.fon-black {
+    background-color: var(--color-60-black);
+    width: 100%;
+    min-height: 800px;
+    margin-top: -10px;
+    z-index: 6;
+    font-size: 200px;
 }
