@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Кино навсегда: история, которая звучит</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
   <div class="rope-wrap" id="ropeWrap">
@@ -484,7 +485,17 @@
 
 
 
-    <footer id="legacy" class="footer reveal">
+    
+    <section id="map" class="section reveal map-section">
+      <div class="container">
+        <div class="section__head"><div class="eyebrow">Новый раздел</div><h2>Карта кино</h2></div>
+        <div class="map-shell">
+          <div id="kinoMap" class="kino-map"></div>
+        </div>
+      </div>
+    </section>
+
+<footer id="legacy" class="footer reveal">
       <div class="container">
         <div class="section__head"><div class="eyebrow">Наследие</div><h2>Подвал страницы</h2></div>
         <div class="section__text longtext"><p>«Смерть стоит того, чтобы жить, а любовь стоит того, чтобы ждать»</p><p>Наследие «КИНО» продолжает жить. На концерты приходят огромное количество людей, улицы по прежнему слышат его песни в исполнении уличных музыкантах. Наши сердца продолжают звучать в такт любимых песен.
@@ -497,6 +508,8 @@
 
   <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
   <div class="modal" id="modal"><div class="modal__box"><button class="btn modal__close" id="closeModal">Закрыть</button><div id="modalText"></div></div></div>
+  <script src="assets/script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="assets/script.js"></script>
 </body>
 </html>

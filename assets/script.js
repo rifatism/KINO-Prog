@@ -75,3 +75,20 @@ document.addEventListener('DOMContentLoaded', () => {
     show();
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mapEl = document.getElementById('kinoMap');
+  if (!mapEl || typeof L === 'undefined') return;
+  const places = [
+    {title:'Камчатка',coords:[59.9550,30.3376],address:'ул. Блохина, 15',text:'Легендарная котельная и одна из главных точек памяти о Викторе Цое.',photo:'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80'},
+    {title:'Барельеф на Блохина, 15',coords:[59.9547,30.3382],address:'Двор дома',text:'Небольшая, но важная городская точка памяти.',photo:'https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1200&q=80'},
+    {title:'Могила Виктора Цоя',coords:[59.8809,30.4028],address:'Богословское кладбище',text:'Одно из самых посещаемых мест, связанных с Цоем.',photo:'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80'},
+    {title:'Севкабель Порт',coords:[59.9240,30.2402],address:'Кожевенная линия, 40',text:'Культурная точка, где история Кино может продолжаться в выставках и событиях.',photo:'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80'},
+    {title:'Петроградская сторона',coords:[59.9540,30.3037],address:'Санкт-Петербург',text:'Городской контекст ленинградского рока и атмосфера эпохи.',photo:'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80'}
+  ];
+  const map = L.map('kinoMap', {scrollWheelZoom:true, zoomControl:false, doubleClickZoom:false, dragging:true, tap:false}).setView([59.9405,30.3250], 11);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution:'&copy; OpenStreetMap contributors', maxZoom:19}).addTo(map);
+  const popupHTML = p => `<div class="popup-card"><h3>${p.title}</h3><p><strong>Адрес:</strong> ${p.address}</p><p>${p.text}</p><div class="coord">${p.coords[0].toFixed(4)}, ${p.coords[1].toFixed(4)}</div></div>`;
+  places.forEach(p => L.marker(p.coords).addTo(map).bindPopup(popupHTML(p), {maxWidth:340, autoPan:false}));
+});
