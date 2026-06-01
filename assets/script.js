@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.toggle('open', el.classList.contains('open'));
     });
   });
-});
+
   const track=document.getElementById('galleryTrack');
   const prev=document.querySelector('.gallery-prev');
   const next=document.querySelector('.gallery-next');
