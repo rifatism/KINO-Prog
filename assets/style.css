@@ -746,3 +746,118 @@
 
 /* History cards: shorter preview text */
 .tc-text{line-height:1.5;}
+
+
+/* Bigger album covers without background/frame */
+.albumcard__logo.slot{
+  width: 340px !important;
+  min-width: 340px !important;
+  height: 340px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+.albumcard__logo.slot img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.albumcard{
+  align-items: center;
+}
+.albumcard__content{
+  flex: 1 1 auto;
+}
+
+
+/* More air in album block and prevent text overlap */
+#discography .albumline{
+  gap: 72px !important;
+}
+#discography .albumcard{
+  gap: 42px !important;
+  align-items: center !important;
+  margin: 24px 0 !important;
+}
+#discography .albumcard.left,
+#discography .albumcard.right{
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+#discography .albumcard__content{
+  max-width: calc(100% - 380px) !important;
+  padding-right: 18px !important;
+  overflow-wrap: anywhere !important;
+}
+#discography .albumcard__content p,
+#discography .albumcard__content h3{
+  max-width: 100% !important;
+}
+#discography .albumcard__logo.slot{
+  flex: 0 0 340px !important;
+  width: 340px !important;
+  height: 340px !important;
+}
+
+
+/* Fix album layout overflow and text overlap */
+#discography .albumline{
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 88px !important;
+  overflow: hidden !important;
+}
+#discography .albumcard{
+  display: grid !important;
+  grid-template-columns: minmax(280px, 340px) minmax(0, 1fr) !important;
+  gap: 44px !important;
+  align-items: start !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+#discography .albumcard.right{
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 340px) !important;
+}
+#discography .albumcard__content{
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+#discography .albumcard__logo.slot{
+  width: 100% !important;
+  max-width: 340px !important;
+  height: 340px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+#discography .albumcard__logo.slot img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+#discography .yandex-player,
+#discography .album-sheet{
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+@media (max-width: 900px){
+  #discography .albumcard,
+  #discography .albumcard.right{
+    grid-template-columns: 1fr !important;
+  }
+  #discography .albumcard__logo.slot{
+    max-width: 100% !important;
+    height: 300px !important;
+  }
+}
