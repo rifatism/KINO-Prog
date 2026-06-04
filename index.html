@@ -1,515 +1,1097 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Кино навсегда: история, которая звучит</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-</head>
-<body>
-  <div class="rope-wrap" id="ropeWrap">
-    <div class="rope-btn" id="rope" aria-label="Открыть верхнюю панель" role="button" tabindex="0"></div>
-  </div>
-  <header class="panel" id="panel" aria-label="Навигационная панель">
-    <div class="panel-inner">
-      <nav class="nav-links">
-        <a href="#home">Главная</a>
-        <a href="#about">Общая информация</a>
-        <a href="#history">История</a>
-        <a href="#members">Участники</a>
-        <a href="#discography">Дискография</a>
-        <a href="#now">Кино сейчас</a>
-        <a href="#gallery">Галерея</a>
-        <a href="#map">Карта кино</a>
-        <a href="#legacy">Наследие</a>
-      </nav>
-    </div>
-  </header>
-
-
-
-  <main>
-    <section id="home" class="hero reveal">
-      <div class="hero__bg">
-        <img src="assets/img/diting_result_351ece56579a11f1b701d24139e7144e_1.jpeg" alt="Виктор Цой и группа Кино" />
-      </div>
-      <div class="hero__title">
-        <h1>Кино навсегда</h1>
-        <p>история, которая звучит</p>
-      </div>
-    </section>
-    <section id="about" class="section section--gray reveal filmstrip-section">
-      <div class="filmstrip filmstrip--top">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-      </div>
-      <div class="container section__grid">
-        <div>
-          <div class="eyebrow">Введение</div>
-          <h2>Символ эпохи</h2>
-        </div>
-        <div class="section__text longtext">
-          <p>Москва, Лужники. Огромный стадион. 24 июня 1990 год. Последний концерт, завершающий тур по городам. И 70-тысячная толпа, которая скандирует песни, глубоко проникающие внутрь и вызывающие мурашки. Виктор Цой, ставший голосом поколения и символом того, что сидело внутри у каждого советского гражданина.</p>
-          <p>Через неделю Виктор погиб в автокатастрофе. Его Москвич-2141 вылетел на встречную полосу и врезался в «Икарус».</p>
-          <p>Эту группа играет в наушниках у подростков, взрослые люди всегда включают её на приемниках в машине, и ни одна посиделка у костра не может обойтись без «Группы крови на рукаве» под мелодии гитары. Это «КИНО», которое стало символом эпохи и настоящим феноменом, украсившим жизнь людей на постсоветском пространстве. Группа, которая продолжает звучать в наших сердцах.</p>
-          <p>Мы решили создать музей-экспозицию на ваших экранах. Здесь вы можете ознакомиться с историей создания, участниками групп в разные временные отрезки, дискографию. Найти архивные материалы и увидеть, чем занимается группа сейчас.</p>
-          <p>Основной акцент — на лидере группы. Но лидер никогда не бывает один. Рядом с ним всегда находятся люди, которые наполняют и вдохновляют его.</p>
-        </div>
-      </div>
-      <div class="filmstrip filmstrip--bottom">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-      </div>
-    </section>
-
-
-
-    <section id="history" class="section reveal">
-      <div class="container">
-        <div class="section__head"><div class="eyebrow">История создания</div><h2>От «Гарина и Гиперболоидов» к «Кино»</h2></div>
-        <div class="timeline-center">
-          <article class="tc-item left"><div class="tc-card"><div class="tc-year">1981</div><div class="tc-title">Создание группы</div><div class="tc-text">Крым, первые идеи группы.</div><button class="detail-btn" data-expand="tc1">Подробно <span>→</span></button><div class="expand" id="tc1"><p>Виктор Цой, уже создавший в школе группу «Палата №6», Алексей Рыбин и Олег Валинский из «Пилигрима» летом отправились в Крым, где им пришла идея создать группу «Гарин и Гиперболоид» — в честь фантастического романа Алексея Толстого. Название было вдохновлено западными группами, где в названии было два-три слова. «Мы тогда в Крыму отдыхали: жили в палатке, играли на гитаре и выпивали. В общем — наслаждались молодыми деньками. Иногда к нам присоединялся Олег — хороший парень и талантливый барабанщик! И вот мы решили: а почему бы собственную группу не создать? Так, в посёлке Морское и появились «Гарин и гиперболоиды»». К тому времени Цой уже несколько раз выступал на концертах одной из первых панк-групп того времени — «Автоматические удовлетворители», под предводительством Андрея Панова, или же «Свина». Сейчас его называют отцом русского панка. Именно он убедил Виктора не стесняться и писать собственные тексты.</p></div></div></article>
-          <article class="tc-item right"><div class="tc-card"><div class="tc-year">1982</div><div class="tc-title">Название</div><div class="tc-text">Выбрано короткое название «Кино».</div><button class="detail-btn" data-expand="tc2">Подробно <span>→</span></button><div class="expand" id="tc2"><p>Почему КИНО? Название ёмкое, краткое, искусственное. Музыканты перебирали много названий, но к окончательному названию так и не пришли. Шла подготовка к записи первого альбома, нужно было слово, которое можно поместить на обложку альбома. После долгих обсуждений на квартире, ребята шли к станции «Технологический институт» и обратили внимание на светящуюся вывеску кинотеатра «Космонавт». Решение было принято быстро, можно сказать даже из-за безысходности, потому что вариант был отброшен полчаса назад. Выходит дебютный магнитоальбом «45».</p></div></div></article>
-          <article class="tc-item left"><div class="tc-card"><div class="tc-year">1983</div><div class="tc-title">Репетиции</div><div class="tc-text">Появляется Каспарян и новый звук.</div><button class="detail-btn" data-expand="tc3">Подробно <span>→</span></button><div class="expand" id="tc3"><p>В группу приходит гитарист Юрий Каспарян, который вскоре станет ближайшим соратником Цоя. Из-за творческих разногласий и желания играть собственную музыку группу покидает сооснователь Алексей Рыбин. Единственным аудиодокументом того периода стал альбом под названием «46» — демонстрационные версии новых песен Цоя, записанные в домашней портастудии Алексея Вишни, молодого звукорежиссёра. Песни продолжили линию городской романтики, но, вместе с тем, материал вышел более мрачным и холодным. Вишня без ведома музыкантов пустил запись в народ, и многие восприняли её как второй номерной альбом группы «Кино», несмотря на то, что самой группой её легитимность никогда не признавалась.</p></div></div></article>
-          <article class="tc-item right"><div class="tc-card"><div class="tc-year">1984</div><div class="tc-title">Первые выступления</div><div class="tc-text">Первые концерты и признание слушателей.</div><button class="detail-btn" data-expand="tc4">Подробно <span>→</span></button><div class="expand" id="tc4"><p>В начале 1984 года Цой и Каспарян приступили к записи настоящего второго альбома. К ним присоединились Георгий Гурьянов и Александр Титов. Вместе они доработали альбом «Начальник Камчатки» («Камчаткой» именовалась котельная, в которой Цой позже работал кочегаром). Тогда же музыканты выступили на II фестивале Ленинградского рок-клуба, где произвели настоящую сенсацию, став его лауреатами и самым ярким открытием: в частности, лучшей песней мероприятия была признана их «Я объявляю свой дом». С тех пор группа получила некоторую известность и стала регулярно гастролировать по другим городам Советского Союза.</p></div></div></article>
-          <article class="tc-item left"><div class="tc-card"><div class="tc-year">1985</div><div class="tc-title">Укрепление состава</div><div class="tc-text">Запись и рост популярности группы.</div><button class="detail-btn" data-expand="tc5">Подробно <span>→</span></button><div class="expand" id="tc5"><p>Запись альбома «Это не любовь», который стал самым романтичным за всю историю группы. Александр Титов, одновременно с участием в деятельности группы, был членом «Аквариума», и с каждым днём ему становилось всё труднее совмещать работу в двух группах, поэтому в ноябре 1985 года он принял решение покинуть «Кино» в пользу другого ансамбля. На его место взяли гитариста Игоря Тихомирова. Таким образом, сформировался классический состав группы, просуществовавший до самого её конца.</p></div></div></article>
-          <article class="tc-item right"><div class="tc-card"><div class="tc-year">1986</div><div class="tc-title">Рост внимания</div><div class="tc-text">Группа становится заметнее по всей стране.</div><button class="detail-btn" data-expand="tc6">Подробно <span>→</span></button><div class="expand" id="tc6"><p>Альбом под названием «Ночь» стал первым официальным релизом «Кино», изданным московской фирмой «Мелодия». Пластинка, по некоторым данным, разошлась двухмиллионным тиражом, сделав группу знаменитой далеко за пределами рок-сообщества. Тем не менее сами музыканты крайне негативно восприняли выпуск этого альбома, с продаж которого не получили ни копейки.</p></div></div></article>
-          <article class="tc-item left"><div class="tc-card"><div class="tc-year">1987</div><div class="tc-title">Сценический образ</div><div class="tc-text">Новые песни и мощный успех.</div><button class="detail-btn" data-expand="tc7">Подробно <span>→</span></button><div class="expand" id="tc7"><p>Настоящий взрыв популярности произошёл в 1988 году с выходом альбома «Группа крови». Эта пластинка стала символом поколения перемен, в ней романтический протест и внутренняя свобода достигли своего апогея. Усилили эффект и кинематографические работы: культовая финальная сцена фильма Сергея Соловьёва «Асса», где Цой исполняет «Мы ждём перемен!», и главная роль в фильме Рашида Нугманова «Игла» превратили Виктора Цоя в «последнего героя» для миллионов.</p></div></div></article>
-          <article class="tc-item right"><div class="tc-card"><div class="tc-year">1988</div><div class="tc-title">Альбомы</div><div class="tc-text">Пик популярности и большие выступления.</div><button class="detail-btn" data-expand="tc8">Подробно <span>→</span></button><div class="expand" id="tc8"><p>В 1989 году вышел альбом «Звезда по имени Солнце». Музыканты поехали в Нью-Йорк, где состоялся премьерный показ фильма «Игла» и был сыгран небольшой концерт. После этого группа получила предложение записать сборник лучших песен, который будет сводиться во Франции. Музыканты собрались в Москве на студии Валерия Леонтьева, после записи кассета была отправлена в Париж.</p></div></div></article>
-          <article class="tc-item left"><div class="tc-card"><div class="tc-year">1989</div><div class="tc-title">Пик популярности</div><div class="tc-text">Легендарный статус и большие концерты.</div><button class="detail-btn" data-expand="tc9">Подробно <span>→</span></button><div class="expand" id="tc9"><p>В 1989 году группа уже была на вершине популярности. Концерты собирали огромную аудиторию, а песни «Кино» окончательно стали частью культурного кода эпохи. Именно этот период закрепил за группой статус легенды, которая стала голосом поколения.</p></div></div></article>
-        </div>
-      </div>
-      <div class="filmstrip filmstrip--bottom">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-      </div>
-    </section>
-    <section id="members" class="section section--gray reveal">
-      <div class="container">
-        <div class="section__head"><div class="eyebrow">Участники</div><h2>Люди, которые сделали «Кино»</h2></div>
-        <div class="team-row team-row--kino">
-          <article class="team-card">
-            <div class="card-img-wrapper"><img src="assets/img/1.jpg" alt="Виктор Цой" /></div>
-            <div class="card-content">
-              <h3 class="card-name">Виктор Цой</h3>
-              <p class="card-desc">Основатель и лидер группы.</p>
-              <button class="card-btn detail-btn" data-open-detail="m1">Подробнее <span>→</span></button>
-            </div>
-            <div class="card-sheet" id="m1-sheet">
-              <button class="sheet-back" data-close-detail="m1">← Назад</button>
-              <div class="sheet-grid"><div class="sheet-photo slot">фото</div><div class="sheet-text"><p>Единственный ребенок в семье инженера корейского происхождения и преподавательницы физкультуры. Рос обычным советским ребенком, тяготел к живописи и музыке. Увлекался западными группами: «The Cure», «Duran Duran», «David Bowie», «The Beatles», «The Doors», «Sex Pistols». Его кумирами были Брюс Ли, Высоцкий и Михаил Боярский. Уже в 8 классе организовал свою группу, пытался писать свою музыку. Из воспоминаний отца Виктора: «Запрется в ванной, чтобы мы не слышали, и играет. У него тогда голос «ломался», вот он и стеснялся».</p><p>Лирический образ в песнях Виктора Цоя, окончательно сформировавшийся в поздних альбомах группы «Кино», — человек, наполненный стремлением к свободе и переменам в сознании людей, обладающий твёрдостью духа, бесстрашием и неуклонно стремящийся к победе; на своём пути он одинок, а образами надежды для него являются любовь и «звезда в небе».</p></div></div>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="card-img-wrapper"><img src="assets/img/2.jpg" alt="Юрий Каспарян" /></div>
-            <div class="card-content">
-              <h3 class="card-name">Юрий Каспарян</h3>
-              <p class="card-desc">Музыкант, гитарист группы «КИНО». Один из создателей и главное действующее лицо проекта «Симфоническое Кино».</p>
-              <button class="card-btn detail-btn" data-open-detail="m2">Подробнее <span>→</span></button>
-            </div>
-            <div class="card-sheet" id="m2-sheet">
-              <button class="sheet-back" data-close-detail="m2">← Назад</button>
-              <div class="sheet-grid"><div class="sheet-photo slot">фото</div><div class="sheet-text"><p>Ближайший друг, соратник Виктора. Когда они познакомились, Юрий ещё не особо хорошо играл на гитаре, из-за чего Цоя отговаривали от сотрудничества. Но тот отвечал: «Ничего, молодой, научится». Позже он превратился в настоящего гения, который создавал пронзительные и мелодичные гитарные партии, благодаря которым группа стала символом эпохи. Чего только стоит гитарный рифф в композиции «Спокойная ночь».</p><p>После смерти Виктора погрузился в эзотерику и философию, ушёл из музыки. Но музыка так и не смогла уйти от него, и в начале нулевых он создал группу «Ю-Питер» совместно с Бутусовым. Сейчас его гитара продолжает дело группы и погружает в мир «КИНО» новых слушателей.</p></div></div>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="card-img-wrapper"><img src="assets/img/3.jpg" alt="Георгий Гурьянов" /></div>
-            <div class="card-content">
-              <h3 class="card-name">Георгий Гурьянов</h3>
-              <p class="card-desc">Художник, барабанщик группы «КИНО».</p>
-              <button class="card-btn detail-btn" data-open-detail="m3">Подробнее <span>→</span></button>
-            </div>
-            <div class="card-sheet" id="m3-sheet">
-              <button class="sheet-back" data-close-detail="m3">← Назад</button>
-              <div class="sheet-grid"><div class="sheet-photo slot">фото</div><div class="sheet-text"><p>С 1984 года Георгий Гурьянов был ударником, аранжировщиком и бэк-вокалистом группы «КИНО». Взял псевдоним “Густав”. Благодаря нему, группа стала известна своим особенным романтическим стилем и имиджем, его считали законодателем вкуса, настоящий Петербургский денди. Отличался игрой на ударных стоя, потому что сидящего барабанщика не видно. После смерти Виктора ушёл из музыки и погрузился в живопись, его произведения в середине нулевых стали одними из самых востребованных и дорогих на рынке искусства России. Умер в 2013 году из-за болезни.</p></div></div>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="card-img-wrapper"><img src="assets/img/4.jpg" alt="Игорь Тихомиров" /></div>
-            <div class="card-content">
-              <h3 class="card-name">Игорь Тихомиров</h3>
-              <p class="card-desc">Музыкант, звукорежиссер, продюсер, бас-гитарист группы «КИНО», участник групп «Джунгли» и «ДДТ».</p>
-              <button class="card-btn detail-btn" data-open-detail="m4">Подробнее <span>→</span></button>
-            </div>
-            <div class="card-sheet" id="m4-sheet">
-              <button class="sheet-back" data-close-detail="m4">← Назад</button>
-              <div class="sheet-grid"><div class="sheet-photo slot">фото</div><div class="sheet-text"><p>С приходом Игоря Тихомирова группа «КИНО» обрела свой «золотой» состав. Интересен сам момент прихода Игоря Тихомирова в группу. Случилось это в главной точке схождения всего ленинградского андеграунда, когда Александр Титов объявил о своем уходе Цою, после чего Виктор подошел к другому столику, за которым стоял Тихомиров, и предложил музыканту играть вместе.</p><p>Игорь согласился на месте, ему пришлось за пару дней учить весь репертуар группы. Сейчас он исполняет песни «КИНО» совместно с Каспаряном и Титовым.</p></div></div>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="card-img-wrapper"><img src="assets/img/5.jpg" alt="Алексей Рыбин" /></div>
-            <div class="card-content">
-              <h3 class="card-name">Алексей Рыбин</h3>
-              <p class="card-desc">Музыкант, участник первого состава «КИНО».</p>
-              <button class="card-btn detail-btn" data-open-detail="m5">Подробнее <span>→</span></button>
-            </div>
-            <div class="card-sheet" id="m5-sheet">
-              <button class="sheet-back" data-close-detail="m5">← Назад</button>
-              <div class="sheet-grid"><div class="sheet-photo slot">фото</div><div class="sheet-text"><p>Один из основателей группы, который оказал большое влияние на коллектив и лидера. Благодаря дружбе со Свином и рок-тусовке, познакомился с Виктором. У них сошлись взгляды, они вместе прошли первый этап становления: квартирники, выступление в Ленинградском рок-клубе и запись «45». Во время работы над альбомом они разошлись во мнениях, поссорились и больше не общались. Уехал в Москву, а потом и в США. По возвращению начал заниматься литературной, журналистской деятельностью. Используя изначальное название, в 2019 году организовал группу, в которой исполняет кавер-песни, к которым имеет прямое отношение.</p></div></div>
-            </div>
-          </article>
-          <article class="team-card">
-            <div class="card-img-wrapper"><img src="assets/img/6.jpg" alt="Александр Титов" /></div>
-            <div class="card-content">
-              <h3 class="card-name">Александр Титов</h3>
-              <p class="card-desc">Музыкант, басист группы «КИНО» и группы «Аквариум».</p>
-              <button class="card-btn detail-btn" data-open-detail="m6">Подробнее <span>→</span></button>
-            </div>
-            <div class="card-sheet" id="m6-sheet">
-              <button class="sheet-back" data-close-detail="m6">← Назад</button>
-              <div class="sheet-grid"><div class="sheet-photo slot">фото</div><div class="sheet-text"><p>Многие представители Ленинградского рок-клуба в разное время участвовали как в выступлениях «КИНО», так и в процессе записи альбомов. С самого начала значительной была поддержка музыкантов группы «Аквариум», которые выступали с Виктором с 1982 года, но именно Александр Титов стал полноценным участником обеих групп («КИНО» и «Аквариум») в период с 1984 по 1986 год. Из-за невозможности совмещать графики выступлений он вынужден был выбирать и покинул группу «КИНО».</p><p>Александр участвовал в записи альбомов «Начальник Камчатки», «Это не любовь» и «Ночь».</p></div></div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="discography" class="section reveal">
-      <div class="container">
-        <div class="section__head"><div class="eyebrow">Дискография</div><h2>Легендарные альбомы</h2></div>
-        <div class="albumline no-line albumline--music">
-          <article class="albumcard left albumcard--music">
-            <div class="albumcard__logo slot"><img src="assets/img/7.jpg" alt=""></div>
-            <div class="albumcard__content">
-              <h3>«45» (1982)</h3>
-              <p>Первый альбом группы. Получил такое название, потому что по времени звучания он длился 45 минут в первоначальной версии, с песней «Асфальт». Потом песню посчитали неудачной и убрали. А название оставили. Стал одним из первых альбомов в истории русской рок-музыки, при записи которого использовалась драм-машина.</p>
-              <div class="yandex-player">
-                <iframe src="https://music.yandex.ru/iframe/#track/5406886/10495761" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
-              </div>
-              <button class="card-btn detail-btn album-detail-btn" data-open-album="a1">Подробнее <span>→</span></button>
-            </div>
-            <div class="album-sheet" id="a1-sheet">
-              <button class="sheet-back" data-close-album="a1">← Назад</button>
-              <div class="album-sheet__inner">
-                <div class="album-sheet__history"><h4>Краткая история</h4><p>Первый альбом группы. Название связано с первоначальной длительностью записи — 45 минут. Альбом стал одной из ранних вех русского рока.</p></div>
-                <div class="album-sheet__tracks">
-                  <div class="track-row"><span>1. Время есть, а денег нет</span></div>
-                  <div class="track-row"><span>2. Просто хочешь знать ты</span></div>
-                  <div class="track-row"><span>3. Алюминиевые огурцы</span></div>
-                  <div class="track-row"><span>4. Солнечные дни</span></div>
-                  <div class="track-row"><span>5. Бездельник №1</span></div>
-                  <div class="track-row"><span>6. Бездельник №2</span></div>
-                  <div class="track-row"><span>7. Электричка</span></div>
-                  <div class="track-row"><span>8. Восьмиклассница</span></div>
-                  <div class="track-row"><span>9. Мои друзья...</span></div>
-                  <div class="track-row"><span>10. Ситар играл</span></div>
-                  <div class="track-row"><span>11. Дерево</span></div>
-                  <div class="track-row"><span>12. Когда-то ты был битником</span></div>
-                  <div class="track-row"><span>13. На кухне</span></div>
-                  <div class="track-row"><span>14. Асфальт</span></div>
-                  <p>Песня «Мои друзья» вдохновлена панк-периодом в жизни Цоя и его общением с Андреем Пановым «Свином» и его окружением. Есть отсылки к конкретным ленинградским адресам. Пивной ларек — конкретное заведение на проспекте Космонавтов.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="albumcard right albumcard--music">
-            <div class="albumcard__content">
-              <h3>«46» (1983)</h3>
-              <p>Цой и Каспарян записали альбом «Сорок шесть» с помощью Алексея Вишни. Запись была сделана на домашней студии Вишни, и альбом был выпущен без одобрения Андрея Тропилло, продюсера.</p>
-              <div class="yandex-player">
-                <iframe src="https://music.yandex.ru/iframe/#track/5406886/10495761" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
-              </div>
-              <button class="card-btn detail-btn album-detail-btn" data-open-album="a2">Подробнее <span>→</span></button>
-            </div>
-            <div class="albumcard__logo slot"><img src="assets/img/8.jpg" alt=""></div>
-            <div class="album-sheet" id="a2-sheet">
-              <button class="sheet-back" data-close-album="a2">← Назад</button>
-              <div class="album-sheet__inner">
-                <div class="album-sheet__history"><h4>Краткая история</h4><p>Альбом воспринимался как репетиционная лента, а не как полноценный релиз. Цой не признавал его официальным альбомом «КИНО».</p></div>
-                <div class="album-sheet__tracks">
-                  <div class="track-row"><span>1. Троллейбус</span></div>
-                  <div class="track-row"><span>2. Камчатка</span></div>
-                  <div class="track-row"><span>3. Транквилизатор</span></div>
-                  <div class="track-row"><span>4. Я иду по улице</span></div>
-                  <div class="track-row"><span>5. Дождь для нас</span></div>
-                  <div class="track-row"><span>6. Пора</span></div>
-                  <div class="track-row"><span>7. Каждую ночь</span></div>
-                  <div class="track-row"><span>8. Без десяти</span></div>
-                  <div class="track-row"><span>9. Музыка волн</span></div>
-                  <div class="track-row"><span>10. Саша</span></div>
-                  <div class="track-row"><span>11. Хочу быть с тобой</span></div>
-                  <div class="track-row"><span>12. Генерал</span></div>
-                  <div class="track-row"><span>13. Стань птицей</span></div>
-                  <div class="track-row"><span>14. Сельва</span></div>
-                  <div class="track-row"><span>15. Я хочу быть кочегаром</span></div>
-                  <p>Песня «Транквилизатор» была создана после самого тяжёлого периода жизни Цоя. В 1983 году на адрес родителей пришла повестка в военкомат. Виктор, понимавший риски ухода в армию в период Афганской войны, решил прибегнуть к радикальному методу — имитации маниакально-депрессивного психоза. Он попал в психиатрическую больницу №2, где побывали Бродский, Даниил Хармс и другие представители петербургской интеллигенции. Там, среди уколов, процедур и разговоров с врачами, пытавшимися «вывести его на чистую воду», он пережил внутренний перелом. Марианна Цой вспоминала: «Когда его выписывали, я еле дотащила Витю до машины. Он выглядел прозрачным. А ночью я увидела его на кухне — в темноте он что-то писал карандашиком. Это был текст Транквилизатора».</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="albumcard left albumcard--music">
-            <div class="albumcard__logo slot"><img src="assets/img/9.jpg" alt=""></div>
-            <div class="albumcard__content">
-              <h3>«Начальник Камчатки» (1984)</h3>
-              <p>Третий альбом группы «Кино». Альбом наполовину состоит из песен из черновика «46». Название альбома является отсылкой к фильму «Начальник Чукотки» — про молодого человека, которого послали на Чукотку бороться против капиталистов.</p>
-              <div class="yandex-player">
-                <iframe src="https://music.yandex.ru/iframe/#track/5406886/10495761" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
-              </div>
-              <button class="card-btn detail-btn album-detail-btn" data-open-album="a3">Подробнее <span>→</span></button>
-            </div>
-            <div class="album-sheet" id="a3-sheet">
-              <button class="sheet-back" data-close-album="a3">← Назад</button>
-              <div class="album-sheet__inner">
-                <div class="album-sheet__history"><h4>Краткая история</h4><p>Запись альбома проходила спонтанно, без репетиций, в студии царил беспорядок. Виктор Цой работал над альбомом после выхода из психиатрической больницы. В записи участвовали музыканты из разных групп, включая Александра Титова и Георгия Гурьянова. Барабанщиком был окончательно выбран Георгий Гурьянов, а также использовались драм-машина и перкуссия. Здесь Виктор находит свой собственный стиль. Запись альбома заняла две-три недели.</p></div>
-                <div class="album-sheet__tracks">
-                  <div class="track-row"><span>1. Последний герой</span></div>
-                  <div class="track-row"><span>2. Каждую ночь</span></div>
-                  <div class="track-row"><span>3. Транквилизатор</span></div>
-                  <div class="track-row"><span>4. Сюжет для новой песни</span></div>
-                  <div class="track-row"><span>5. Гость</span></div>
-                  <div class="track-row"><span>6. Камчатка</span></div>
-                  <div class="track-row"><span>7. Ария мистера X</span></div>
-                  <div class="track-row"><span>8. Троллейбус</span></div>
-                  <div class="track-row"><span>9. Растопите снег</span></div>
-                  <div class="track-row"><span>10. Дождь для нас</span></div>
-                  <div class="track-row"><span>11. Хочу быть с тобой</span></div>
-                  <div class="track-row"><span>12. Генерал</span></div>
-                  <div class="track-row"><span>13. Прогулка романтика</span></div>
-                  <div class="track-row"><span>14. Танкисты</span></div>
-                  <div class="track-row"><span>15. Анаша</span></div>
-                  <div class="track-row"><span>16. Постой, паровоз</span></div>
-                  <p>«Каждую ночь» была написана летом 1983 года. Было дождливо, Виктор и его жена, Марианна, мечтали оказаться на берегу тёплого моря. Песня исполнялась в разные годы на квартирниках.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="albumcard right albumcard--music">
-            <div class="albumcard__content">
-              <h3>«Это не любовь» (1985)</h3>
-              <p>Альбом отличается от предыдущих работ группы более лёгким и звонким звучанием, а также лирической тематикой текстов, посвящённых любви и отношениям. Автором обложки альбома стал сам Цой.</p>
-              <div class="yandex-player">
-                <iframe src="https://music.yandex.ru/iframe/#track/5406886/10495761" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
-              </div>
-              <button class="card-btn detail-btn album-detail-btn" data-open-album="a4">Подробнее <span>→</span></button>
-            </div>
-            <div class="albumcard__logo slot"><img src="assets/img/10.jpg" alt=""></div>
-            <div class="album-sheet" id="a4-sheet">
-              <button class="sheet-back" data-close-album="a4">← Назад</button>
-              <div class="album-sheet__inner">
-                <div class="album-sheet__history"><h4>Краткая история</h4><p>В качестве материала для обложки послужила фотография девушки из иностранного журнала об искусстве.</p></div>
-                <div class="album-sheet__tracks">
-                  <div class="track-row"><span>1. Это не любовь</span></div>
-                  <div class="track-row"><span>2. Весна</span></div>
-                  <div class="track-row"><span>3. Уходи</span></div>
-                  <div class="track-row"><span>4. Город</span></div>
-                  <div class="track-row"><span>5. Это — любовь (Проснись)</span></div>
-                  <div class="track-row"><span>6. Рядом со мной</span></div>
-                  <div class="track-row"><span>7. Я объявляю свой дом</span></div>
-                  <div class="track-row"><span>8. Саша</span></div>
-                  <div class="track-row"><span>9. Верь мне</span></div>
-                  <div class="track-row"><span>10. Дети проходных дворов</span></div>
-                  <div class="track-row"><span>11. Музыка волн</span></div>
-                  <div class="track-row"><span>12. Разреши мне...</span></div>
-                  <div class="track-row"><span>13. Стишок</span></div>
-                  <div class="track-row"><span>14. Прохожий</span></div>
-                  <p>Песня «Это не любовь» дала название пластинке. Это лирическая композиция про несчастную любовь и мечты.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="albumcard left albumcard--music">
-            <div class="albumcard__logo slot"><img src="assets/img/11.jpg" alt=""></div>
-            <div class="albumcard__content">
-              <h3>«Ночь» (1986)</h3>
-              <p>«Ночь для меня — это особое время суток, когда исчезают все отвлекающие факторы. Но не только. Ночь наполняет меня ощущением мистики» — Виктор Цой.</p>
-              <div class="yandex-player">
-                <iframe src="https://music.yandex.ru/iframe/#track/5406886/10495761" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
-              </div>
-              <button class="card-btn detail-btn album-detail-btn" data-open-album="a5">Подробнее <span>→</span></button>
-            </div>
-            <div class="album-sheet" id="a5-sheet">
-              <button class="sheet-back" data-close-album="a5">← Назад</button>
-              <div class="album-sheet__inner">
-                <div class="album-sheet__history"><h4>Краткая история</h4><p>Альбом стал первым официальным релизом «Кино», изданным московской фирмой «Мелодия».</p></div>
-                <div class="album-sheet__tracks">
-                  <div class="track-row"><span>1. Видели ночь</span></div>
-                  <div class="track-row"><span>2. Фильмы</span></div>
-                  <div class="track-row"><span>3. Твой номер</span></div>
-                  <div class="track-row"><span>4. Танец</span></div>
-                  <div class="track-row"><span>5. Ночь</span></div>
-                  <div class="track-row"><span>6. Последний герой</span></div>
-                  <div class="track-row"><span>7. Жизнь в стёклах</span></div>
-                  <div class="track-row"><span>8. Мама-анархия</span></div>
-                  <div class="track-row"><span>9. Звёзды останутся здесь</span></div>
-                  <div class="track-row"><span>10. Игра</span></div>
-                  <div class="track-row"><span>11. Мы хотим танцевать</span></div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="albumcard right albumcard--music">
-            <div class="albumcard__content">
-              <h3>«Группа крови» (1988)</h3>
-              <p>Группа «КИНО» в её целостном культовом формате началась именно с альбома «Группа крови». Альбом получил широкую известность как в СССР, так и за рубежом.</p>
-              <div class="yandex-player">
-                <iframe src="https://music.yandex.ru/iframe/#track/5406886/10495761" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
-              </div>
-              <button class="card-btn detail-btn album-detail-btn" data-open-album="a6">Подробнее <span>→</span></button>
-            </div>
-            <div class="albumcard__logo slot"><img src="assets/img/12.jpg" alt=""></div>
-            <div class="album-sheet" id="a6-sheet">
-              <button class="sheet-back" data-close-album="a6">← Назад</button>
-              <div class="album-sheet__inner">
-                <div class="album-sheet__history"><h4>Краткая история</h4><p>В 2007 году редакция журнала Rolling Stone Russia включила песню «Группа крови» в свой список «40 песен, изменивших мир».</p><p>Обложка альбома оформлена рисунком в духе супрематизма. За основу был взят плакат Казимира Малевича к немому фильму Фрица Ланга «Доктор Мабузе, игрок». Этот плакат Андрей Крисанов увидел в Русском музее, где он работал в котельной и где в то время проходила выставка искусства 1920-1930-х годов.</p></div>
-                <div class="album-sheet__tracks">
-                  <div class="track-row"><span>1. Группа крови</span></div>
-                  <div class="track-row"><span>2. Закрой за мной дверь, я ухожу</span></div>
-                  <div class="track-row"><span>3. Война</span></div>
-                  <div class="track-row"><span>4. Спокойная ночь</span></div>
-                  <div class="track-row"><span>5. Мама, мы все тяжело больны</span></div>
-                  <div class="track-row"><span>6. Бошетунмай</span></div>
-                  <div class="track-row"><span>7. В наших глазах</span></div>
-                  <div class="track-row"><span>8. Попробуй спеть вместе со мной</span></div>
-                  <div class="track-row"><span>9. Прохожий</span></div>
-                  <div class="track-row"><span>10. Дальше действовать будем мы</span></div>
-                  <div class="track-row"><span>11. Легенда</span></div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="albumcard left albumcard--music">
-            <div class="albumcard__logo slot"><img src="assets/img/13.jpg" alt=""></div>
-            <div class="albumcard__content">
-              <h3>«Звезда по имени Солнце» (1989)</h3>
-              <p>Черновая версия была записана в квартире Георгия Гурьянова. Окончательный вариант записывался на студии Валерия Леонтьева в Москве.</p>
-              <div class="yandex-player">
-                <iframe src="https://music.yandex.ru/iframe/#track/5406886/10495761" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
-              </div>
-              <button class="card-btn detail-btn album-detail-btn" data-open-album="a7">Подробнее <span>→</span></button>
-            </div>
-            <div class="album-sheet" id="a7-sheet">
-              <button class="sheet-back" data-close-album="a7">← Назад</button>
-              <div class="album-sheet__inner">
-                <div class="album-sheet__history"><h4>Краткая история</h4><p>Альбом концептуальный, с текстами о личной борьбе и размышлениях о смысле жизни. Звучание мягче и сглаженнее, чем у предыдущих альбомов. Альбом получил название «Звезда по имени Солнце» после записи финальной версии.</p></div>
-                <div class="album-sheet__tracks">
-                  <div class="track-row"><span>1. Песня без слов</span></div>
-                  <div class="track-row"><span>2. Звезда по имени Солнце</span></div>
-                  <div class="track-row"><span>3. Невесёлая песня</span></div>
-                  <div class="track-row"><span>4. Сказка</span></div>
-                  <div class="track-row"><span>5. Место для шага вперёд</span></div>
-                  <div class="track-row"><span>6. Пачка сигарет</span></div>
-                  <div class="track-row"><span>7. Стук</span></div>
-                  <div class="track-row"><span>8. Печаль</span></div>
-                  <div class="track-row"><span>9. Апрель</span></div>
-                  <p>«Звезда по имени Солнце» — песня об обречённости героя, о том, что всегда должен быть тот, кто пойдёт за звездой по пути, ведущему к смерти.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="albumcard right albumcard--music">
-            <div class="albumcard__content">
-              <h3>«Чёрный альбом» (1991)</h3>
-              <p>Последний официальный альбом «КИНО», записанный уже без Виктора. Осенью 1990 года он был выпущен без названия, но впоследствии за ним закрепилось народное название «Чёрный».</p>
-              <div class="yandex-player">
-                <iframe src="https://music.yandex.ru/iframe/#track/5406886/10495761" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
-              </div>
-              <button class="card-btn detail-btn album-detail-btn" data-open-album="a8">Подробнее <span>→</span></button>
-            </div>
-            <div class="albumcard__logo slot"><img src="assets/img/14.jpg" alt=""></div>
-            <div class="album-sheet" id="a8-sheet">
-              <button class="sheet-back" data-close-album="a8">← Назад</button>
-              <div class="album-sheet__inner">
-                <div class="album-sheet__history"><h4>Краткая история</h4><p>Альбом создавался на основе уцелевшего материала. Были «спасены» записанный ранее голос Цоя и звук его гитары. Музыкантам удалось достичь баланса: сохранить первоначальное звучание песен и при этом сделать профессиональную запись с качественными аранжировками.</p></div>
-                <div class="album-sheet__tracks">
-                  <div class="track-row"><span>1. Кончится лето</span></div>
-                  <div class="track-row"><span>2. Красно-жёлтые дни</span></div>
-                  <div class="track-row"><span>3. Нам с тобой</span></div>
-                  <div class="track-row"><span>4. Звезда</span></div>
-                  <div class="track-row"><span>5. Кукушка</span></div>
-                  <div class="track-row"><span>6. Когда твоя девушка больна</span></div>
-                  <div class="track-row"><span>7. Муравейник</span></div>
-                  <div class="track-row"><span>8. Следи за собой</span></div>
-                  <div class="track-row"><span>9. Сосны на морском берегу</span></div>
-                  <div class="track-row"><span>10. Завтра война</span></div>
-                  <p>«Кончится лето». По мнению филолога Елены Шаджановой, одна из главных тем песни — отсутствие как внешних, так и внутренних стимулов к действию. При этом лирический герой не имеет возможности вернуться назад — он зашёл в тупик. Текст песни может отражать чувство приближающейся смерти.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section id="now" class="section section--gray reveal filmstrip-section">
-      <div class="filmstrip filmstrip--top">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-      </div>
-      <div class="container">
-        <div class="section__head"><div class="eyebrow">Кино сейчас</div><h2>Группа в сегодняшнем звучании</h2></div>
-        <div class="section__text wide longtext">
-          <p>В 2010 году, в рамках концерта «20 лет без Кино», впервые прозвучали симфонические инструментальные версии песен группы, оркестровки сделал Игорь Вдовин. Затем два года продолжалась работа над полноценной концертной программой; на этом этапе к проекту подключился гитарист «Кино» Юрий Каспарян, продюсером проекта выступил сын Виктор Цоя — Александр Цой. Проект «Симфоническое Кино» был представлен 21 июня 2012 года, к 50-летию со дня рождения Виктора Цоя.</p>
-          <p>Музыканты КИНО снова играют вместе на одной сцене. Голос Виктора Цоя был оцифрован с оригинальных записей КИНО и звучит на концертах. А на сцене — басисты Александр Титов и Игорь Тихомиров, а также бессменный гитарист группы Юрий Каспарян.</p>
-          <p>Также, в Севкабель-порту открыли выставку «ВИКТОР ЦОЙ. ЛЕГЕНДА». Экспозиция занимает почти три тысячи квадратных метров. В тринадцати залах можно увидеть уникальную коллекцию личных вещей музыканта, редкие документы, гитары, костюмы, картины, видеозаписи из семейного архива. А еще услышать любимые песни, знакомый голос и малоизвестные кадры семейной хроники Цоя.</p>
-          <p>Выставка в Севкабель Порту — это хроника рождения легенды, кино, которое при жизни музыканта так и не было снято. Как актер Виктор Цой свел в одну систему координат Джеймса Дина и Брюса Ли, в музыке соединил стилистику и звучание звезд Новой волны и Ленинградского рок-клуба, в живописи стал преемником уличного искусства Кита Харинга и Жана-Мишеля Баскии. Все грани таланта Виктора Цоя найдут воплощение в экспозиции.</p>
-          <button class="detail-btn" data-expand="now-extra">Подробно <span>→</span></button>
-          <div class="expand" id="now-extra"><p>Место для ссылок, афиш, текущих материалов, страниц проекта, социальных сетей и любого современного контекста.</p></div>
-        </div>
-        <div class="collage collage--fullorange collage--tall">
-          <div class="f1 slot"><img src="assets/img/1-1.jpg" alt=""></div><div class="f2 slot">фото</div><div class="f3 slot">фото</div><div class="f4 slot">фото</div><div class="f5 slot">фото</div><div class="f6 slot">фото</div><div class="f7 slot">фото</div><div class="f8 slot">фото</div><div class="f9 slot">фото</div>
-        </div>
-      </div>
-      <div class="filmstrip filmstrip--bottom">
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-      </div>
-    </section>
-
-
-
-    <section id="gallery" class="section reveal">
-      <div class="container">
-        <div class="section__head"><div class="eyebrow">Галерея</div><h2>Галерея</h2></div>
-        <div class="gallery-slider">
-          <button class="gallery-prev">← Назад</button>
-          <div class="gallery-track" id="galleryTrack">
-            <figure class="gallery-slide">
-              <div class="photo-placeholder">место под фото</div>
-              <figcaption>Виктор Цой - лидер группы Кино</figcaption>
-            </figure>
-            <figure class="gallery-slide">
-              <div class="photo-placeholder">место под фото</div>
-              <figcaption>Архивный материал группы</figcaption>
-            </figure>
-            <figure class="gallery-slide">
-              <div class="photo-placeholder">место под фото</div>
-              <figcaption>Дизайнерская композиция</figcaption>
-            </figure>
-          </div>
-          <button class="gallery-next">Вперед →</button>
-        </div>
-      </div>
-    </section>
-
-
-
-    
-    <section id="map" class="section reveal map-section">
-      <div class="container">
-        <div class="section__head"><div class="eyebrow">Новый раздел</div><h2>Карта кино</h2></div>
-        <div class="map-shell">
-          <div id="kinoMap" class="kino-map"></div>
-        </div>
-      </div>
-    </section>
-
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Кино навсегда: история, которая звучит</title>
+		<link rel="stylesheet" href="assets/style.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	</head>
+	<body>
+		<!-- <div class="rope-wrap" id="ropeWrap">
+			<div class="rope-btn" id="rope" aria-label="Открыть верхнюю панель" role="button" tabindex="0">
+			</div>
+		</div> -->
+		<!-- <header class="panel" id="panel" aria-label="Навигационная панель">
+			<div class="panel-inner">
+				<nav class="nav-links">
+					<a href="#home">Главная</a>
+					<a href="#about">Общая информация</a>
+					<a href="#history">История</a>
+					<a href="#members">Участники</a>
+					<a href="#discography">Дискография</a>
+					<a href="#now">Кино сейчас</a>
+					<a href="#gallery">Галерея</a>
+					<a href="#map">Карта кино</a>
+					<a href="#legacy">Наследие</a>
+				</nav>
+			</div>
+		</header> -->
+		<main>
+			<section id="home" class="hero reveal">
+				<div class="hero__bg">
+					<img src="assets/img/diting_result_351ece56579a11f1b701d24139e7144e_1.jpeg" alt="Виктор Цой и группа Кино" />
+				</div>
+				<div class="hero__title">
+					<h1>Кино навсегда</h1>
+					<p>история, которая звучит</p>
+				</div>
+			</section>
+			<section id="about" class="section section--gray reveal filmstrip-section">
+				<div class="filmstrip filmstrip--top">
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+				</div>
+				<div class="container section__grid">
+					<div>
+						<div class="eyebrow">Введение</div>
+						<h2>Символ эпохи</h2>
+					</div>
+					<div class="section__text longtext">
+						<p>Москва, Лужники. Огромный стадион. 24 июня 1990 год. Последний концерт, завершающий тур по городам. И 70-тысячная толпа, которая скандирует песни, глубоко проникающие внутрь и вызывающие мурашки. Виктор Цой, ставший голосом поколения и символом того, что сидело внутри у каждого советского гражданина.</p>
+						<p>Через неделю Виктор погиб в автокатастрофе. Его Москвич-2141 вылетел на встречную полосу и врезался в «Икарус».</p>
+						<p>Эту группа играет в наушниках у подростков, взрослые люди всегда включают её на приемниках в машине, и ни одна посиделка у костра не может обойтись без «Группы крови на рукаве» под мелодии гитары. Это «КИНО», которое стало символом эпохи и настоящим феноменом, украсившим жизнь людей на постсоветском пространстве. Группа, которая продолжает звучать в наших сердцах.</p>
+						<p>Мы решили создать музей-экспозицию на ваших экранах. Здесь вы можете ознакомиться с историей создания, участниками групп в разные временные отрезки, дискографию. Найти архивные материалы и увидеть, чем занимается группа сейчас.</p>
+						<p>Основной акцент — на лидере группы. Но лидер никогда не бывает один. Рядом с ним всегда находятся люди, которые наполняют и вдохновляют его.</p>
+					</div>
+				</div>
+				<div class="filmstrip filmstrip--bottom">
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+					<span>
+					</span>
+				</div>
+			</section>
+			<section id="history" class="section reveal">
+				<div class="container">
+					<div class="section__head">
+						<div class="eyebrow">История создания</div>
+						<h2>От «Гарина и Гиперболоидов» к «Кино»</h2>
+					</div>
+					<div class="timeline-center">
+						<article class="tc-item left">
+							<div class="tc-card">
+								<div class="tc-year">1981</div>
+								<div class="tc-title">Создание группы</div>
+								<div class="tc-text">Крым, первые идеи группы.</div>
+								<button class="detail-btn" data-expand="tc1" aria-expanded="false">Подробно <span>→</span>
+							</button>
+							<div class="expand" id="tc1">
+								<p>Виктор Цой, уже создавший в школе группу «Палата №6», Алексей Рыбин и Олег Валинский из «Пилигрима» летом отправились в Крым, где им пришла идея создать группу «Гарин и Гиперболоид» — в честь фантастического романа Алексея Толстого. Название было вдохновлено западными группами, где в названии было два-три слова. «Мы тогда в Крыму отдыхали: жили в палатке, играли на гитаре и выпивали. В общем — наслаждались молодыми деньками. Иногда к нам присоединялся Олег — хороший парень и талантливый барабанщик! И вот мы решили: а почему бы собственную группу не создать? Так, в посёлке Морское и появились «Гарин и гиперболоиды»». К тому времени Цой уже несколько раз выступал на концертах одной из первых панк-групп того времени — «Автоматические удовлетворители», под предводительством Андрея Панова, или же «Свина». Сейчас его называют отцом русского панка. Именно он убедил Виктора не стесняться и писать собственные тексты.</p>
+							</div>
+						</div>
+					</article>
+					<article class="tc-item right">
+						<div class="tc-card">
+							<div class="tc-year">1982</div>
+							<div class="tc-title">Название</div>
+							<div class="tc-text">Выбрано короткое название «Кино».</div>
+							<button class="detail-btn" data-expand="tc2" aria-expanded="false">Подробно <span>→</span>
+						</button>
+						<div class="expand" id="tc2">
+							<p>Почему КИНО? Название ёмкое, краткое, искусственное. Музыканты перебирали много названий, но к окончательному названию так и не пришли. Шла подготовка к записи первого альбома, нужно было слово, которое можно поместить на обложку альбома. После долгих обсуждений на квартире, ребята шли к станции «Технологический институт» и обратили внимание на светящуюся вывеску кинотеатра «Космонавт». Решение было принято быстро, можно сказать даже из-за безысходности, потому что вариант был отброшен полчаса назад. Выходит дебютный магнитоальбом «45».</p>
+						</div>
+					</div>
+				</article>
+				<article class="tc-item left">
+					<div class="tc-card">
+						<div class="tc-year">1983</div>
+						<div class="tc-title">Репетиции</div>
+						<div class="tc-text">Появляется Каспарян и новый звук.</div>
+						<button class="detail-btn" data-expand="tc3" aria-expanded="false">Подробно <span>→</span>
+					</button>
+					<div class="expand" id="tc3">
+						<p>В группу приходит гитарист Юрий Каспарян, который вскоре станет ближайшим соратником Цоя. Из-за творческих разногласий и желания играть собственную музыку группу покидает сооснователь Алексей Рыбин. Единственным аудиодокументом того периода стал альбом под названием «46» — демонстрационные версии новых песен Цоя, записанные в домашней портастудии Алексея Вишни, молодого звукорежиссёра. Песни продолжили линию городской романтики, но, вместе с тем, материал вышел более мрачным и холодным. Вишня без ведома музыкантов пустил запись в народ, и многие восприняли её как второй номерной альбом группы «Кино», несмотря на то, что самой группой её легитимность никогда не признавалась.</p>
+					</div>
+				</div>
+			</article>
+			<article class="tc-item right">
+				<div class="tc-card">
+					<div class="tc-year">1984</div>
+					<div class="tc-title">Первые выступления</div>
+					<div class="tc-text">Первые концерты и признание слушателей.</div>
+					<button class="detail-btn" data-expand="tc4" aria-expanded="false">Подробно <span>→</span>
+				</button>
+				<div class="expand" id="tc4">
+					<p>В начале 1984 года Цой и Каспарян приступили к записи настоящего второго альбома. К ним присоединились Георгий Гурьянов и Александр Титов. Вместе они доработали альбом «Начальник Камчатки» («Камчаткой» именовалась котельная, в которой Цой позже работал кочегаром). Тогда же музыканты выступили на II фестивале Ленинградского рок-клуба, где произвели настоящую сенсацию, став его лауреатами и самым ярким открытием: в частности, лучшей песней мероприятия была признана их «Я объявляю свой дом». С тех пор группа получила некоторую известность и стала регулярно гастролировать по другим городам Советского Союза.</p>
+				</div>
+			</div>
+		</article>
+		<article class="tc-item left">
+			<div class="tc-card">
+				<div class="tc-year">1985</div>
+				<div class="tc-title">Укрепление состава</div>
+				<div class="tc-text">Запись и рост популярности группы.</div>
+				<button class="detail-btn" data-expand="tc5" aria-expanded="false">Подробно <span>→</span>
+			</button>
+			<div class="expand" id="tc5">
+				<p>Запись альбома «Это не любовь», который стал самым романтичным за всю историю группы. Александр Титов, одновременно с участием в деятельности группы, был членом «Аквариума», и с каждым днём ему становилось всё труднее совмещать работу в двух группах, поэтому в ноябре 1985 года он принял решение покинуть «Кино» в пользу другого ансамбля. На его место взяли гитариста Игоря Тихомирова. Таким образом, сформировался классический состав группы, просуществовавший до самого её конца.</p>
+			</div>
+		</div>
+	</article>
+	<article class="tc-item right">
+		<div class="tc-card">
+			<div class="tc-year">1986</div>
+			<div class="tc-title">Рост внимания</div>
+			<div class="tc-text">Группа становится заметнее по всей стране.</div>
+			<button class="detail-btn" data-expand="tc6" aria-expanded="false">Подробно <span>→</span>
+		</button>
+		<div class="expand" id="tc6">
+			<p>Альбом под названием «Ночь» стал первым официальным релизом «Кино», изданным московской фирмой «Мелодия». Пластинка, по некоторым данным, разошлась двухмиллионным тиражом, сделав группу знаменитой далеко за пределами рок-сообщества. Тем не менее сами музыканты крайне негативно восприняли выпуск этого альбома, с продаж которого не получили ни копейки.</p>
+		</div>
+	</div>
+</article>
+<article class="tc-item left">
+	<div class="tc-card">
+		<div class="tc-year">1987</div>
+		<div class="tc-title">Сценический образ</div>
+		<div class="tc-text">Новые песни и мощный успех.</div>
+		<button class="detail-btn" data-expand="tc7" aria-expanded="false">Подробно <span>→</span>
+	</button>
+	<div class="expand" id="tc7">
+		<p>Настоящий взрыв популярности произошёл в 1988 году с выходом альбома «Группа крови». Эта пластинка стала символом поколения перемен, в ней романтический протест и внутренняя свобода достигли своего апогея. Усилили эффект и кинематографические работы: культовая финальная сцена фильма Сергея Соловьёва «Асса», где Цой исполняет «Мы ждём перемен!», и главная роль в фильме Рашида Нугманова «Игла» превратили Виктора Цоя в «последнего героя» для миллионов.</p>
+	</div>
+</div>
+</article>
+<article class="tc-item right">
+	<div class="tc-card">
+		<div class="tc-year">1988</div>
+		<div class="tc-title">Альбомы</div>
+		<div class="tc-text">Пик популярности и большие выступления.</div>
+		<button class="detail-btn" data-expand="tc8" aria-expanded="false">Подробно <span>→</span>
+	</button>
+	<div class="expand" id="tc8">
+		<p>В 1989 году вышел альбом «Звезда по имени Солнце». Музыканты поехали в Нью-Йорк, где состоялся премьерный показ фильма «Игла» и был сыгран небольшой концерт. После этого группа получила предложение записать сборник лучших песен, который будет сводиться во Франции. Музыканты собрались в Москве на студии Валерия Леонтьева, после записи кассета была отправлена в Париж.</p>
+	</div>
+</div>
+</article>
+<article class="tc-item left">
+	<div class="tc-card">
+		<div class="tc-year">1989</div>
+		<div class="tc-title">Пик популярности</div>
+		<div class="tc-text">Легендарный статус и большие концерты.</div>
+		<button class="detail-btn" data-expand="tc9" aria-expanded="false">Подробно <span>→</span>
+	</button>
+	<div class="expand" id="tc9">
+		<p>В 1989 году группа уже была на вершине популярности. Концерты собирали огромную аудиторию, а песни «Кино» окончательно стали частью культурного кода эпохи. Именно этот период закрепил за группой статус легенды, которая стала голосом поколения.</p>
+	</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="members" class="section section--gray reveal">
+	<div class="container">
+		<div class="section__head">
+			<div class="eyebrow">Участники</div>
+			<h2>Люди, которые сделали «Кино»</h2>
+		</div>
+		<div class="team-row team-row--kino">
+			<article class="team-card">
+				<div class="card-img-wrapper">
+					<img src="assets/img/1.jpg" alt="Виктор Цой" />
+				</div>
+				<div class="card-content">
+					<h3 class="card-name">Виктор Цой</h3>
+					<p class="card-desc">Основатель и лидер группы.</p>
+					<button class="card-btn detail-btn" data-open-detail="m1">Подробнее <span>→</span>
+				</button>
+			</div>
+			<div class="card-sheet" id="m1-sheet">
+				<button class="sheet-back" data-close-detail="m1">← Назад</button>
+				<div class="sheet-grid">
+					<div class="sheet-photo slot"><img style="background: none" src="assets/img/2-1.webp" alt=""></div>
+					<div class="sheet-text">
+						<p>Единственный ребенок в семье инженера корейского происхождения и преподавательницы физкультуры. Рос обычным советским ребенком, тяготел к живописи и музыке. Увлекался западными группами: «The Cure», «Duran Duran», «David Bowie», «The Beatles», «The Doors», «Sex Pistols». Его кумирами были Брюс Ли, Высоцкий и Михаил Боярский. Уже в 8 классе организовал свою группу, пытался писать свою музыку. Из воспоминаний отца Виктора: «Запрется в ванной, чтобы мы не слышали, и играет. У него тогда голос «ломался», вот он и стеснялся».</p>
+						<p>Лирический образ в песнях Виктора Цоя, окончательно сформировавшийся в поздних альбомах группы «Кино», — человек, наполненный стремлением к свободе и переменам в сознании людей, обладающий твёрдостью духа, бесстрашием и неуклонно стремящийся к победе.</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="team-card">
+			<div class="card-img-wrapper">
+				<img src="assets/img/2.jpg" alt="Юрий Каспарян" />
+			</div>
+			<div class="card-content">
+				<h3 class="card-name">Юрий Каспарян</h3>
+				<p class="card-desc">Музыкант, гитарист группы «КИНО». Один из создателей и главное действующее лицо проекта «Симфоническое Кино».</p>
+				<button class="card-btn detail-btn" data-open-detail="m2">Подробнее <span>→</span>
+			</button>
+		</div>
+		<div class="card-sheet" id="m2-sheet">
+			<button class="sheet-back" data-close-detail="m2">← Назад</button>
+			<div class="sheet-grid">
+				<div class="sheet-photo slot">фото</div>
+				<div class="sheet-text">
+					<p>Ближайший друг, соратник Виктора. Когда они познакомились, Юрий ещё не особо хорошо играл на гитаре, из-за чего Цоя отговаривали от сотрудничества. Но тот отвечал: «Ничего, молодой, научится». Позже он превратился в настоящего гения, который создавал пронзительные и мелодичные гитарные партии, благодаря которым группа стала символом эпохи. Чего только стоит гитарный рифф в композиции «Спокойная ночь».</p>
+					<p>После смерти Виктора погрузился в эзотерику и философию, ушёл из музыки. Но музыка так и не смогла уйти от него, и в начале нулевых он создал группу «Ю-Питер» совместно с Бутусовым. Сейчас его гитара продолжает дело группы и погружает в мир «КИНО» новых слушателей.</p>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="team-card">
+		<div class="card-img-wrapper">
+			<img src="assets/img/3.jpg" alt="Георгий Гурьянов" />
+		</div>
+		<div class="card-content">
+			<h3 class="card-name">Георгий Гурьянов</h3>
+			<p class="card-desc">Художник, барабанщик группы «КИНО».</p>
+			<button class="card-btn detail-btn" data-open-detail="m3">Подробнее <span>→</span>
+		</button>
+	</div>
+	<div class="card-sheet" id="m3-sheet">
+		<button class="sheet-back" data-close-detail="m3">← Назад</button>
+		<div class="sheet-grid">
+			<div class="sheet-photo slot">фото</div>
+			<div class="sheet-text">
+				<p>С 1984 года Георгий Гурьянов был ударником, аранжировщиком и бэк-вокалистом группы «КИНО». Взял псевдоним “Густав”. Благодаря нему, группа стала известна своим особенным романтическим стилем и имиджем, его считали законодателем вкуса, настоящий Петербургский денди. Отличался игрой на ударных стоя, потому что сидящего барабанщика не видно. После смерти Виктора ушёл из музыки и погрузился в живопись, его произведения в середине нулевых стали одними из самых востребованных и дорогих на рынке искусства России. Умер в 2013 году из-за болезни.</p>
+			</div>
+		</div>
+	</div>
+</article>
+<article class="team-card">
+	<div class="card-img-wrapper">
+		<img src="assets/img/4.jpg" alt="Игорь Тихомиров" />
+	</div>
+	<div class="card-content">
+		<h3 class="card-name">Игорь Тихомиров</h3>
+		<p class="card-desc">Музыкант, звукорежиссер, продюсер, бас-гитарист группы «КИНО», участник групп «Джунгли» и «ДДТ».</p>
+		<button class="card-btn detail-btn" data-open-detail="m4">Подробнее <span>→</span>
+	</button>
+</div>
+<div class="card-sheet" id="m4-sheet">
+	<button class="sheet-back" data-close-detail="m4">← Назад</button>
+	<div class="sheet-grid">
+		<div class="sheet-photo slot">фото</div>
+		<div class="sheet-text">
+			<p>С приходом Игоря Тихомирова группа «КИНО» обрела свой «золотой» состав. Интересен сам момент прихода Игоря Тихомирова в группу. Случилось это в главной точке схождения всего ленинградского андеграунда, когда Александр Титов объявил о своем уходе Цою, после чего Виктор подошел к другому столику, за которым стоял Тихомиров, и предложил музыканту играть вместе.</p>
+			<p>Игорь согласился на месте, ему пришлось за пару дней учить весь репертуар группы. Сейчас он исполняет песни «КИНО» совместно с Каспаряном и Титовым.</p>
+		</div>
+	</div>
+</div>
+</article>
+<article class="team-card">
+	<div class="card-img-wrapper">
+		<img src="assets/img/5.jpg" alt="Алексей Рыбин" />
+	</div>
+	<div class="card-content">
+		<h3 class="card-name">Алексей Рыбин</h3>
+		<p class="card-desc">Музыкант, участник первого состава «КИНО».</p>
+		<button class="card-btn detail-btn" data-open-detail="m5">Подробнее <span>→</span>
+	</button>
+</div>
+<div class="card-sheet" id="m5-sheet">
+	<button class="sheet-back" data-close-detail="m5">← Назад</button>
+	<div class="sheet-grid">
+		<div class="sheet-photo slot">фото</div>
+		<div class="sheet-text">
+			<p>Один из основателей группы, который оказал большое влияние на коллектив и лидера. Благодаря дружбе со Свином и рок-тусовке, познакомился с Виктором. У них сошлись взгляды, они вместе прошли первый этап становления: квартирники, выступление в Ленинградском рок-клубе и запись «45». Во время работы над альбомом они разошлись во мнениях, поссорились и больше не общались. Уехал в Москву, а потом и в США. По возвращению начал заниматься литературной, журналистской деятельностью. Используя изначальное название, в 2019 году организовал группу, в которой исполняет кавер-песни, к которым имеет прямое отношение.</p>
+		</div>
+	</div>
+</div>
+</article>
+<article class="team-card">
+	<div class="card-img-wrapper">
+		<img src="assets/img/6.jpg" alt="Александр Титов" />
+	</div>
+	<div class="card-content">
+		<h3 class="card-name">Александр Титов</h3>
+		<p class="card-desc">Музыкант, басист группы «КИНО» и группы «Аквариум».</p>
+		<button class="card-btn detail-btn" data-open-detail="m6">Подробнее <span>→</span>
+	</button>
+</div>
+<div class="card-sheet" id="m6-sheet">
+	<button class="sheet-back" data-close-detail="m6">← Назад</button>
+	<div class="sheet-grid">
+		<div class="sheet-photo slot">фото</div>
+		<div class="sheet-text">
+			<p>Многие представители Ленинградского рок-клуба в разное время участвовали как в выступлениях «КИНО», так и в процессе записи альбомов. С самого начала значительной была поддержка музыкантов группы «Аквариум», которые выступали с Виктором с 1982 года, но именно Александр Титов стал полноценным участником обеих групп («КИНО» и «Аквариум») в период с 1984 по 1986 год. Из-за невозможности совмещать графики выступлений он вынужден был выбирать и покинул группу «КИНО».</p>
+			<p>Александр участвовал в записи альбомов «Начальник Камчатки», «Это не любовь» и «Ночь».</p>
+		</div>
+	</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="discography" class="section reveal">
+	<div class="container">
+		<div class="section__head">
+			<div class="eyebrow">Дискография</div>
+			<h2>Легендарные альбомы</h2>
+		</div>
+		<div class="albumline no-line albumline--music">
+			<article class="albumcard left albumcard--music">
+				<div class="albumcard__logo slot">
+					<img src="assets/img/7.jpg" alt="">
+				</div>
+				<div class="albumcard__content">
+					<h3>«45» (1982)</h3>
+					<p>Первый альбом группы. Получил такое название, потому что по времени звучания он длился 45 минут в первоначальной версии, с песней «Асфальт». Потом песню посчитали неудачной и убрали. А название оставили. Стал одним из первых альбомов в истории русской рок-музыки, при записи которого использовалась драм-машина.</p>
+					<div class="yandex-player">
+						<iframe src="https://music.yandex.ru/iframe/album/10562 " width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay"></iframe>
+					</div>
+					<button class="card-btn detail-btn album-detail-btn" data-open-album="a1">Подробнее <span>→</span>
+				</button>
+			</div>
+			<div class="album-sheet" id="a1-sheet">
+				<button class="sheet-back" data-close-album="a1">← Назад</button>
+				<div class="album-sheet__inner">
+					<div class="album-sheet__history">
+						<h4>Краткая история</h4>
+						<p>Первый альбом группы. Название связано с первоначальной длительностью записи — 45 минут. Альбом стал одной из ранних вех русского рока.</p>
+					</div>
+					<div class="album-sheet__tracks">
+						<div class="track-row">
+							<span>1. Время есть, а денег нет</span>
+						</div>
+						<div class="track-row">
+							<span>2. Просто хочешь знать ты</span>
+						</div>
+						<div class="track-row">
+							<span>3. Алюминиевые огурцы</span>
+						</div>
+						<div class="track-row">
+							<span>4. Солнечные дни</span>
+						</div>
+						<div class="track-row">
+							<span>5. Бездельник №1</span>
+						</div>
+						<div class="track-row">
+							<span>6. Бездельник №2</span>
+						</div>
+						<div class="track-row">
+							<span>7. Электричка</span>
+						</div>
+						<div class="track-row">
+							<span>8. Восьмиклассница</span>
+						</div>
+						<div class="track-row">
+							<span>9. Мои друзья...</span>
+						</div>
+						<div class="track-row">
+							<span>10. Ситар играл</span>
+						</div>
+						<div class="track-row">
+							<span>11. Дерево</span>
+						</div>
+						<div class="track-row">
+							<span>12. Когда-то ты был битником</span>
+						</div>
+						<div class="track-row">
+							<span>13. На кухне</span>
+						</div>
+						<div class="track-row">
+							<span>14. Асфальт</span>
+						</div>
+						<p>Песня «Мои друзья» вдохновлена панк-периодом в жизни Цоя и его общением с Андреем Пановым «Свином» и его окружением. Есть отсылки к конкретным ленинградским адресам. Пивной ларек — конкретное заведение на проспекте Космонавтов.</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article class="albumcard right albumcard--music">
+			<div class="albumcard__content">
+				<h3>«46» (1983)</h3>
+				<p>Цой и Каспарян записали альбом «Сорок шесть» с помощью Алексея Вишни. Запись была сделана на домашней студии Вишни, и альбом был выпущен без одобрения Андрея Тропилло, продюсера.</p>
+				<div class="yandex-player">
+					<iframe src="https://music.yandex.ru/iframe/album/10243" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay">
+					</iframe>
+				</div>
+				<button class="card-btn detail-btn album-detail-btn" data-open-album="a2">Подробнее <span>→</span>
+			</button>
+		</div>
+		<div class="albumcard__logo slot">
+			<img src="assets/img/8.jpg" alt="">
+		</div>
+		<div class="album-sheet" id="a2-sheet">
+			<button class="sheet-back" data-close-album="a2">← Назад</button>
+			<div class="album-sheet__inner">
+				<div class="album-sheet__history">
+					<h4>Краткая история</h4>
+					<p>Альбом воспринимался как репетиционная лента, а не как полноценный релиз. Цой не признавал его официальным альбомом «КИНО».</p>
+				</div>
+				<div class="album-sheet__tracks">
+					<div class="track-row">
+						<span>1. Троллейбус</span>
+					</div>
+					<div class="track-row">
+						<span>2. Камчатка</span>
+					</div>
+					<div class="track-row">
+						<span>3. Транквилизатор</span>
+					</div>
+					<div class="track-row">
+						<span>4. Я иду по улице</span>
+					</div>
+					<div class="track-row">
+						<span>5. Дождь для нас</span>
+					</div>
+					<div class="track-row">
+						<span>6. Пора</span>
+					</div>
+					<div class="track-row">
+						<span>7. Каждую ночь</span>
+					</div>
+					<div class="track-row">
+						<span>8. Без десяти</span>
+					</div>
+					<div class="track-row">
+						<span>9. Музыка волн</span>
+					</div>
+					<div class="track-row">
+						<span>10. Саша</span>
+					</div>
+					<div class="track-row">
+						<span>11. Хочу быть с тобой</span>
+					</div>
+					<div class="track-row">
+						<span>12. Генерал</span>
+					</div>
+					<div class="track-row">
+						<span>13. Стань птицей</span>
+					</div>
+					<div class="track-row">
+						<span>14. Сельва</span>
+					</div>
+					<div class="track-row">
+						<span>15. Я хочу быть кочегаром</span>
+					</div>
+					<p>Песня «Транквилизатор» была создана после самого тяжёлого периода жизни Цоя. В 1983 году на адрес родителей пришла повестка в военкомат. Виктор, понимавший риски ухода в армию в период Афганской войны, решил прибегнуть к радикальному методу — имитации маниакально-депрессивного психоза. Он попал в психиатрическую больницу №2, где побывали Бродский, Даниил Хармс и другие представители петербургской интеллигенции. Там, среди уколов, процедур и разговоров с врачами, пытавшимися «вывести его на чистую воду», он пережил внутренний перелом. Марианна Цой вспоминала: «Когда его выписывали, я еле дотащила Витю до машины. Он выглядел прозрачным. А ночью я увидела его на кухне — в темноте он что-то писал карандашиком. Это был текст Транквилизатора».</p>
+				</div>
+			</div>
+		</div>
+	</article>
+	<article class="albumcard left albumcard--music">
+		<div class="albumcard__logo slot">
+			<img src="assets/img/9.jpg" alt="">
+		</div>
+		<div class="albumcard__content">
+			<h3>«Начальник Камчатки» (1984)</h3>
+			<p>Третий альбом группы «Кино». Альбом наполовину состоит из песен из черновика «46». Название альбома является отсылкой к фильму «Начальник Чукотки» — про молодого человека, которого послали на Чукотку бороться против капиталистов.</p>
+			<div class="yandex-player">
+				<iframe src="https://music.yandex.ru/iframe/album/41119099" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay">
+				</iframe>
+			</div>
+			<button class="card-btn detail-btn album-detail-btn" data-open-album="a3">Подробнее <span>→</span>
+		</button>
+	</div>
+	<div class="album-sheet" id="a3-sheet">
+		<button class="sheet-back" data-close-album="a3">← Назад</button>
+		<div class="album-sheet__inner">
+			<div class="album-sheet__history">
+				<h4>Краткая история</h4>
+				<p>Запись альбома проходила спонтанно, без репетиций, в студии царил беспорядок. Виктор Цой работал над альбомом после выхода из психиатрической больницы. В записи участвовали музыканты из разных групп, включая Александра Титова и Георгия Гурьянова. Барабанщиком был окончательно выбран Георгий Гурьянов, а также использовались драм-машина и перкуссия. Здесь Виктор находит свой собственный стиль. Запись альбома заняла две-три недели.</p>
+			</div>
+			<div class="album-sheet__tracks">
+				<div class="track-row">
+					<span>1. Последний герой</span>
+				</div>
+				<div class="track-row">
+					<span>2. Каждую ночь</span>
+				</div>
+				<div class="track-row">
+					<span>3. Транквилизатор</span>
+				</div>
+				<div class="track-row">
+					<span>4. Сюжет для новой песни</span>
+				</div>
+				<div class="track-row">
+					<span>5. Гость</span>
+				</div>
+				<div class="track-row">
+					<span>6. Камчатка</span>
+				</div>
+				<div class="track-row">
+					<span>7. Ария мистера X</span>
+				</div>
+				<div class="track-row">
+					<span>8. Троллейбус</span>
+				</div>
+				<div class="track-row">
+					<span>9. Растопите снег</span>
+				</div>
+				<div class="track-row">
+					<span>10. Дождь для нас</span>
+				</div>
+				<div class="track-row">
+					<span>11. Хочу быть с тобой</span>
+				</div>
+				<div class="track-row">
+					<span>12. Генерал</span>
+				</div>
+				<div class="track-row">
+					<span>13. Прогулка романтика</span>
+				</div>
+				<div class="track-row">
+					<span>14. Танкисты</span>
+				</div>
+				<div class="track-row">
+					<span>15. Анаша</span>
+				</div>
+				<div class="track-row">
+					<span>16. Постой, паровоз</span>
+				</div>
+				<p>«Каждую ночь» была написана летом 1983 года. Было дождливо, Виктор и его жена, Марианна, мечтали оказаться на берегу тёплого моря. Песня исполнялась в разные годы на квартирниках.</p>
+			</div>
+		</div>
+	</div>
+</article>
+<article class="albumcard right albumcard--music">
+	<div class="albumcard__content">
+		<h3>«Это не любовь» (1985)</h3>
+		<p>Альбом отличается от предыдущих работ группы более лёгким и звонким звучанием, а также лирической тематикой текстов, посвящённых любви и отношениям. Автором обложки альбома стал сам Цой.</p>
+		<div class="yandex-player">
+			<iframe src="https://music.yandex.ru/iframe/album/10155" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay">
+			</iframe>
+		</div>
+		<button class="card-btn detail-btn album-detail-btn" data-open-album="a4">Подробнее <span>→</span>
+	</button>
+</div>
+<div class="albumcard__logo slot">
+	<img src="assets/img/10.jpg" alt="">
+</div>
+<div class="album-sheet" id="a4-sheet">
+	<button class="sheet-back" data-close-album="a4">← Назад</button>
+	<div class="album-sheet__inner">
+		<div class="album-sheet__history">
+			<h4>Краткая история</h4>
+			<p>В качестве материала для обложки послужила фотография девушки из иностранного журнала об искусстве.</p>
+		</div>
+		<div class="album-sheet__tracks">
+			<div class="track-row">
+				<span>1. Это не любовь</span>
+			</div>
+			<div class="track-row">
+				<span>2. Весна</span>
+			</div>
+			<div class="track-row">
+				<span>3. Уходи</span>
+			</div>
+			<div class="track-row">
+				<span>4. Город</span>
+			</div>
+			<div class="track-row">
+				<span>5. Это — любовь (Проснись)</span>
+			</div>
+			<div class="track-row">
+				<span>6. Рядом со мной</span>
+			</div>
+			<div class="track-row">
+				<span>7. Я объявляю свой дом</span>
+			</div>
+			<div class="track-row">
+				<span>8. Саша</span>
+			</div>
+			<div class="track-row">
+				<span>9. Верь мне</span>
+			</div>
+			<div class="track-row">
+				<span>10. Дети проходных дворов</span>
+			</div>
+			<div class="track-row">
+				<span>11. Музыка волн</span>
+			</div>
+			<div class="track-row">
+				<span>12. Разреши мне...</span>
+			</div>
+			<div class="track-row">
+				<span>13. Стишок</span>
+			</div>
+			<div class="track-row">
+				<span>14. Прохожий</span>
+			</div>
+			<p>Песня «Это не любовь» дала название пластинке. Это лирическая композиция про несчастную любовь и мечты.</p>
+		</div>
+	</div>
+</div>
+</article>
+<article class="albumcard left albumcard--music">
+	<div class="albumcard__logo slot">
+		<img src="assets/img/11.jpg" alt="">
+	</div>
+	<div class="albumcard__content">
+		<h3>«Ночь» (1986)</h3>
+		<p>«Ночь для меня — это особое время суток, когда исчезают все отвлекающие факторы. Но не только. Ночь наполняет меня ощущением мистики» — Виктор Цой.</p>
+		<div class="yandex-player">
+			<iframe src="https://music.yandex.ru/iframe/album/10010" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay">
+			</iframe>
+		</div>
+		<button class="card-btn detail-btn album-detail-btn" data-open-album="a5">Подробнее <span>→</span>
+	</button>
+</div>
+<div class="album-sheet" id="a5-sheet">
+	<button class="sheet-back" data-close-album="a5">← Назад</button>
+	<div class="album-sheet__inner">
+		<div class="album-sheet__history">
+			<h4>Краткая история</h4>
+			<p>Альбом стал первым официальным релизом «Кино», изданным московской фирмой «Мелодия».</p>
+		</div>
+		<div class="album-sheet__tracks">
+			<div class="track-row">
+				<span>1. Видели ночь</span>
+			</div>
+			<div class="track-row">
+				<span>2. Фильмы</span>
+			</div>
+			<div class="track-row">
+				<span>3. Твой номер</span>
+			</div>
+			<div class="track-row">
+				<span>4. Танец</span>
+			</div>
+			<div class="track-row">
+				<span>5. Ночь</span>
+			</div>
+			<div class="track-row">
+				<span>6. Последний герой</span>
+			</div>
+			<div class="track-row">
+				<span>7. Жизнь в стёклах</span>
+			</div>
+			<div class="track-row">
+				<span>8. Мама-анархия</span>
+			</div>
+			<div class="track-row">
+				<span>9. Звёзды останутся здесь</span>
+			</div>
+			<div class="track-row">
+				<span>10. Игра</span>
+			</div>
+			<div class="track-row">
+				<span>11. Мы хотим танцевать</span>
+			</div>
+		</div>
+	</div>
+</div>
+</article>
+<article class="albumcard right albumcard--music">
+	<div class="albumcard__content">
+		<h3>«Группа крови» (1988)</h3>
+		<p>Группа «КИНО» в её целостном культовом формате началась именно с альбома «Группа крови». Альбом получил широкую известность как в СССР, так и за рубежом.</p>
+		<div class="yandex-player">
+			<iframe src="https://music.yandex.ru/iframe/album/10100" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay">
+			</iframe>
+		</div>
+		<button class="card-btn detail-btn album-detail-btn" data-open-album="a6">Подробнее <span>→</span>
+	</button>
+</div>
+<div class="albumcard__logo slot">
+	<img src="assets/img/12.jpg" alt="">
+</div>
+<div class="album-sheet" id="a6-sheet">
+	<button class="sheet-back" data-close-album="a6">← Назад</button>
+	<div class="album-sheet__inner">
+		<div class="album-sheet__history">
+			<h4>Краткая история</h4>
+			<p>В 2007 году редакция журнала Rolling Stone Russia включила песню «Группа крови» в свой список «40 песен, изменивших мир».</p>
+			<p>Обложка альбома оформлена рисунком в духе супрематизма. За основу был взят плакат Казимира Малевича к немому фильму Фрица Ланга «Доктор Мабузе, игрок». Этот плакат Андрей Крисанов увидел в Русском музее, где он работал в котельной и где в то время проходила выставка искусства 1920-1930-х годов.</p>
+		</div>
+		<div class="album-sheet__tracks">
+			<div class="track-row">
+				<span>1. Группа крови</span>
+			</div>
+			<div class="track-row">
+				<span>2. Закрой за мной дверь, я ухожу</span>
+			</div>
+			<div class="track-row">
+				<span>3. Война</span>
+			</div>
+			<div class="track-row">
+				<span>4. Спокойная ночь</span>
+			</div>
+			<div class="track-row">
+				<span>5. Мама, мы все тяжело больны</span>
+			</div>
+			<div class="track-row">
+				<span>6. Бошетунмай</span>
+			</div>
+			<div class="track-row">
+				<span>7. В наших глазах</span>
+			</div>
+			<div class="track-row">
+				<span>8. Попробуй спеть вместе со мной</span>
+			</div>
+			<div class="track-row">
+				<span>9. Прохожий</span>
+			</div>
+			<div class="track-row">
+				<span>10. Дальше действовать будем мы</span>
+			</div>
+			<div class="track-row">
+				<span>11. Легенда</span>
+			</div>
+		</div>
+	</div>
+</div>
+</article>
+<article class="albumcard left albumcard--music">
+	<div class="albumcard__logo slot">
+		<img src="assets/img/13.jpg" alt="">
+	</div>
+	<div class="albumcard__content">
+		<h3>«Звезда по имени Солнце» (1989)</h3>
+		<p>Черновая версия была записана в квартире Георгия Гурьянова. Окончательный вариант записывался на студии Валерия Леонтьева в Москве.</p>
+		<div class="yandex-player">
+			<iframe src="https://music.yandex.ru/iframe/album/10030" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay">
+			</iframe>
+		</div>
+		<button class="card-btn detail-btn album-detail-btn" data-open-album="a7">Подробнее <span>→</span>
+	</button>
+</div>
+<div class="album-sheet" id="a7-sheet">
+	<button class="sheet-back" data-close-album="a7">← Назад</button>
+	<div class="album-sheet__inner">
+		<div class="album-sheet__history">
+			<h4>Краткая история</h4>
+			<p>Альбом концептуальный, с текстами о личной борьбе и размышлениях о смысле жизни. Звучание мягче и сглаженнее, чем у предыдущих альбомов. Альбом получил название «Звезда по имени Солнце» после записи финальной версии.</p>
+		</div>
+		<div class="album-sheet__tracks">
+			<div class="track-row">
+				<span>1. Песня без слов</span>
+			</div>
+			<div class="track-row">
+				<span>2. Звезда по имени Солнце</span>
+			</div>
+			<div class="track-row">
+				<span>3. Невесёлая песня</span>
+			</div>
+			<div class="track-row">
+				<span>4. Сказка</span>
+			</div>
+			<div class="track-row">
+				<span>5. Место для шага вперёд</span>
+			</div>
+			<div class="track-row">
+				<span>6. Пачка сигарет</span>
+			</div>
+			<div class="track-row">
+				<span>7. Стук</span>
+			</div>
+			<div class="track-row">
+				<span>8. Печаль</span>
+			</div>
+			<div class="track-row">
+				<span>9. Апрель</span>
+			</div>
+			<p>«Звезда по имени Солнце» — песня об обречённости героя, о том, что всегда должен быть тот, кто пойдёт за звездой по пути, ведущему к смерти.</p>
+		</div>
+	</div>
+</div>
+</article>
+<article class="albumcard right albumcard--music">
+	<div class="albumcard__content">
+		<h3>«Чёрный альбом» (1991)</h3>
+		<p>Последний официальный альбом «КИНО», записанный уже без Виктора. Осенью 1990 года он был выпущен без названия, но впоследствии за ним закрепилось народное название «Чёрный».</p>
+		<div class="yandex-player">
+			<iframe src="https://music.yandex.ru/iframe/album/10373" width="100%" height="100" frameborder="0" allowtransparency="true" allow="autoplay">
+			</iframe>
+		</div>
+		<button class="card-btn detail-btn album-detail-btn" data-open-album="a8">Подробнее <span>→</span>
+	</button>
+</div>
+<div class="albumcard__logo slot">
+	<img src="assets/img/14.jpg" alt="">
+</div>
+<div class="album-sheet" id="a8-sheet">
+	<button class="sheet-back" data-close-album="a8">← Назад</button>
+	<div class="album-sheet__inner">
+		<div class="album-sheet__history">
+			<h4>Краткая история</h4>
+			<p>Альбом создавался на основе уцелевшего материала. Были «спасены» записанный ранее голос Цоя и звук его гитары. Музыкантам удалось достичь баланса: сохранить первоначальное звучание песен и при этом сделать профессиональную запись с качественными аранжировками.</p>
+		</div>
+		<div class="album-sheet__tracks">
+			<div class="track-row">
+				<span>1. Кончится лето</span>
+			</div>
+			<div class="track-row">
+				<span>2. Красно-жёлтые дни</span>
+			</div>
+			<div class="track-row">
+				<span>3. Нам с тобой</span>
+			</div>
+			<div class="track-row">
+				<span>4. Звезда</span>
+			</div>
+			<div class="track-row">
+				<span>5. Кукушка</span>
+			</div>
+			<div class="track-row">
+				<span>6. Когда твоя девушка больна</span>
+			</div>
+			<div class="track-row">
+				<span>7. Муравейник</span>
+			</div>
+			<div class="track-row">
+				<span>8. Следи за собой</span>
+			</div>
+			<div class="track-row">
+				<span>9. Сосны на морском берегу</span>
+			</div>
+			<div class="track-row">
+				<span>10. Завтра война</span>
+			</div>
+			<p>«Кончится лето». По мнению филолога Елены Шаджановой, одна из главных тем песни — отсутствие как внешних, так и внутренних стимулов к действию. При этом лирический герой не имеет возможности вернуться назад — он зашёл в тупик. Текст песни может отражать чувство приближающейся смерти.</p>
+		</div>
+	</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section id="now" class="section section--gray reveal filmstrip-section">
+	<div class="filmstrip filmstrip--top">
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+		<span>
+		</span>
+	</div>
+	<div class="container">
+		<div class="section__head">
+			<div class="eyebrow">Кино сейчас</div>
+			<h2>Группа в сегодняшнем звучании</h2>
+		</div>
+		<div class="section__text wide longtext">
+			<p>В 2010 году, в рамках концерта «20 лет без Кино», впервые прозвучали симфонические инструментальные версии песен группы, оркестровки сделал Игорь Вдовин. Затем два года продолжалась работа над полноценной концертной программой; на этом этапе к проекту подключился гитарист «Кино» Юрий Каспарян, продюсером проекта выступил сын Виктор Цоя — Александр Цой. Проект «Симфоническое Кино» был представлен 21 июня 2012 года, к 50-летию со дня рождения Виктора Цоя.</p>
+			<p>Музыканты КИНО снова играют вместе на одной сцене. Голос Виктора Цоя был оцифрован с оригинальных записей КИНО и звучит на концертах. А на сцене — басисты Александр Титов и Игорь Тихомиров, а также бессменный гитарист группы Юрий Каспарян.</p>
+			<p>Также, в Севкабель-порту открыли выставку «ВИКТОР ЦОЙ. ЛЕГЕНДА». Экспозиция занимает почти три тысячи квадратных метров. В тринадцати залах можно увидеть уникальную коллекцию личных вещей музыканта, редкие документы, гитары, костюмы, картины, видеозаписи из семейного архива. А еще услышать любимые песни, знакомый голос и малоизвестные кадры семейной хроники Цоя.</p>
+			<p>Выставка в Севкабель Порту — это хроника рождения легенды, кино, которое при жизни музыканта так и не было снято. Как актер Виктор Цой свел в одну систему координат Джеймса Дина и Брюса Ли, в музыке соединил стилистику и звучание звезд Новой волны и Ленинградского рок-клуба, в живописи стал преемником уличного искусства Кита Харинга и Жана-Мишеля Баскии. Все грани таланта Виктора Цоя найдут воплощение в экспозиции.</p>
+			<button class="detail-btn" data-expand="now-extra" aria-expanded="false">Подробно <span>→</span>
+		</button>
+		<div class="expand" id="now-extra">
+			<p>Место для ссылок, афиш, текущих материалов, страниц проекта, социальных сетей и любого современного контекста.</p>
+		</div>
+	</div>
+	<div class="collage collage--fullorange collage--tall">
+		<div class="f1 slot">фото
+			<!-- <img src="assets/img/1-1.jpg" alt=""> -->
+		</div>
+		<div class="f2 slot">фото</div>
+		<div class="f3 slot">фото</div>
+		<div class="f4 slot">фото</div>
+		<div class="f5 slot">фото</div>
+		<div class="f6 slot">фото</div>
+		<div class="f7 slot">фото</div>
+		<div class="f8 slot">фото</div>
+		<div class="f9 slot">фото</div>
+	</div>
+</div>
+<div class="filmstrip filmstrip--bottom">
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+	<span>
+	</span>
+</div>
+</section>
+<!-- <section id="gallery" class="section reveal">
+	<div class="container">
+		<div class="section__head">
+			<div class="eyebrow">Галерея</div>
+			<h2>Галерея</h2>
+		</div>
+		<div class="gallery-slider">
+			<button class="gallery-prev">← Назад</button>
+			<div class="gallery-track" id="galleryTrack">
+				<figure class="gallery-slide">
+					<div class="photo-placeholder">место под фото</div>
+					<figcaption>Виктор Цой - лидер группы Кино</figcaption>
+				</figure>
+				<figure class="gallery-slide">
+					<div class="photo-placeholder">место под фото</div>
+					<figcaption>Архивный материал группы</figcaption>
+				</figure>
+				<figure class="gallery-slide">
+					<div class="photo-placeholder">место под фото</div>
+					<figcaption>Дизайнерская композиция</figcaption>
+				</figure>
+			</div>
+			<button class="gallery-next">Вперед →</button>
+		</div>
+	</div>
+</section> -->
+<section id="map" class="section reveal map-section">
+	<div class="container">
+		<div class="section__head">
+			<div class="eyebrow">Новый раздел</div>
+			<h2>Карта кино</h2>
+		</div>
+		<div class="map-shell">
+			<div id="kinoMap" class="kino-map">
+			</div>
+		</div>
+	</div>
+</section>
 <footer id="legacy" class="footer reveal">
-      <div class="container">
-        <div class="section__head"><div class="eyebrow">Наследие</div><h2>Подвал страницы</h2></div>
-        <div class="section__text longtext"><p>«Смерть стоит того, чтобы жить, а любовь стоит того, чтобы ждать»</p><p>Наследие «КИНО» продолжает жить. На концерты приходят огромное количество людей, улицы по прежнему слышат его песни в исполнении уличных музыкантах. Наши сердца продолжают звучать в такт любимых песен.
-Вот уже несколько поколений Виктор Цой не покидает общественное сознание, чем подтверждает свой статус  «Последнего героя»</p></div>
-      </div>
-    </footer>
-  </main>
-
-
-
-  <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
-  <div class="modal" id="modal"><div class="modal__box"><button class="btn modal__close" id="closeModal">Закрыть</button><div id="modalText"></div></div></div>
-  <script src="assets/script.js"></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="assets/script.js"></script>
+	<div class="container">
+		<div class="section__head">
+			<div class="eyebrow">Наследие</div>
+			<h2>«Смерть стоит того, чтобы жить, а любовь стоит того, чтобы ждать»</h2>
+		</div>
+		<div class="section__text longtext">
+			<p>Наследие «КИНО» продолжает жить. На концерты приходят огромное количество людей, улицы по прежнему слышат его песни в исполнении уличных музыкантах. Наши сердца продолжают звучать в такт любимых песен.
+			Вот уже несколько поколений Виктор Цой не покидает общественное сознание, чем подтверждает свой статус  «Последнего героя»</p>
+		</div>
+	</div>
+</footer>
+</main>
+<button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+<div class="modal" id="modal">
+	<div class="modal__box">
+		<button class="btn modal__close" id="closeModal">Закрыть</button>
+		<div id="modalText">
+		</div>
+	</div>
+</div>
+<script src="assets/script-core.js">
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+<script src="assets/script-map.js">
+</script>
 </body>
 </html>
