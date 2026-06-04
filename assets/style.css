@@ -872,3 +872,106 @@
 .coord{font-size:12px;color:#666;background:#f5f7fb;border:1px solid #dde2ee;padding:6px 8px;border-radius:10px;display:inline-block}
 .leaflet-control-container{display:none}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fff}
+
+#history .expand{display:none;}#history .expand.open{display:block;}
+
+#history .expand{display:none;}#history .expand.open{display:block;}
+
+
+/* Кино сейчас: wider horizontal top and bottom photos */
+#now .poster,
+#now .now-photo,
+#now .now__photo,
+#now img{
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  object-fit: cover !important;
+}
+#now .poster img,
+#now .now-photo img,
+#now .now__photo img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+#now .container{
+  max-width: 1200px;
+}
+
+
+/* Even taller horizontal photos in Кино сейчас */
+#now .poster,
+#now .now-photo,
+#now .now__photo,
+#now img{
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 10 !important;
+  height: auto !important;
+  object-fit: cover !important;
+}
+#now .poster,
+#now .now-photo,
+#now .now__photo{
+  min-height: 520px !important;
+}
+#now .poster img,
+#now .now-photo img,
+#now .now__photo img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+
+/* Force 16:9 style bigger height for Кино сейчас images */
+#now .poster,
+#now .now-photo,
+#now .now__photo,
+#now img{
+  width: 100% !important;
+  max-width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  min-height: 640px !important;
+  object-fit: cover !important;
+}
+#now .poster img,
+#now .now-photo img,
+#now .now__photo img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+
+/* Группа в сегодняшнем звучании: larger top and bottom photo slots for full horizontal images */
+#now .gallerygrid,
+#now .now-grid,
+#now .now__grid{
+  gap: 36px !important;
+}
+#now .gallerygrid__item,
+#now .now-photo,
+#now .now__photo,
+#now .poster,
+#now .photo-slot{
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 420px !important;
+  aspect-ratio: 16 / 9 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+#now .gallerygrid__item img,
+#now .now-photo img,
+#now .now__photo img,
+#now .poster img,
+#now .photo-slot img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
