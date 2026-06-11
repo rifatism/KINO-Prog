@@ -965,11 +965,11 @@
 			<p>Музыканты КИНО снова играют вместе на одной сцене. Голос Виктора Цоя был оцифрован с оригинальных записей КИНО и звучит на концертах. А на сцене — басисты Александр Титов и Игорь Тихомиров, а также бессменный гитарист группы Юрий Каспарян.</p>
 			<p>Также, в Севкабель-порту открыли выставку «ВИКТОР ЦОЙ. ЛЕГЕНДА». Экспозиция занимает почти три тысячи квадратных метров. В тринадцати залах можно увидеть уникальную коллекцию личных вещей музыканта, редкие документы, гитары, костюмы, картины, видеозаписи из семейного архива. А еще услышать любимые песни, знакомый голос и малоизвестные кадры семейной хроники Цоя.</p>
 			<p>Выставка в Севкабель Порту — это хроника рождения легенды, кино, которое при жизни музыканта так и не было снято. Как актер Виктор Цой свел в одну систему координат Джеймса Дина и Брюса Ли, в музыке соединил стилистику и звучание звезд Новой волны и Ленинградского рок-клуба, в живописи стал преемником уличного искусства Кита Харинга и Жана-Мишеля Баскии. Все грани таланта Виктора Цоя найдут воплощение в экспозиции.</p>
-			<button class="detail-btn" data-expand="now-extra" aria-expanded="false">Подробно <span>→</span>
+			<!-- <button class="detail-btn" data-expand="now-extra" aria-expanded="false">Подробно <span>→</span>
 		</button>
 		<div class="expand" id="now-extra">
 			<p>Место для ссылок, афиш, текущих материалов, страниц проекта, социальных сетей и любого современного контекста.</p>
-		</div>
+		</div> -->
 	</div>
 	<div class="collage collage--fullorange collage--tall">
 		<div class="f1 slot">фото
@@ -1057,7 +1057,7 @@
 <section id="map" class="section reveal map-section">
 	<div class="container">
 		<div class="section__head">
-			<div class="eyebrow">Новый раздел</div>
+			<!-- <div class="eyebrow">Новый раздел</div> -->
 			<h2>Карта кино</h2>
 		</div>
 		<div class="map-shell">
@@ -1088,32 +1088,6 @@
 	</div>
 	
 </div>
-<div class="weather-footer">
-	<div class="weather-footer__title">Погода в Тюмени</div>
-	<div id="tyumenWeather">Загрузка погоды для Тюмени...</div>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-	const el = document.getElementById('tyumenWeather');
-	if (!el) return;
-
-	fetch('https://api.open-meteo.com/v1/forecast?latitude=57.1522&longitude=65.5272&current=temperature_2m,wind_speed_10m&timezone=auto')
-		.then(r => {
-			if (!r.ok) throw new Error('weather error');
-			return r.json();
-		})
-		.then(data => {
-			const t = data.current.temperature_2m;
-			const w = data.current.wind_speed_10m;
-			const time = data.current.time;
-			el.innerHTML = 'Тюмень: <b>' + t + '°C</b>, ветер <b>' + w + ' м/с</b>. Обновлено: ' + time;
-		})
-		.catch(() => {
-			el.textContent = 'Не удалось загрузить погоду в Тюмени.';
-		});
-});
-</script>
 <script src="assets/script-core.js">
 </script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">

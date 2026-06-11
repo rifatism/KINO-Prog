@@ -12,3 +12,7 @@
 один из первых московских квартирников Цоя. - ​Улица Каретный Ряд, 5/10 ст2​Садовая-Каретная улица, 10
 ​«Кино» играли в «Метле» на сборном концерте в 1986 году.- Улица Новый Арбат, 21
 24 июня 1990 года в «Лужниках» состоялся последний концерт группы «Кино».​СК Лужники, улица Лужники, 24 ст1
+
+<iframe frameborder="0" allow="clipboard-write" style="border:none;width:614px;height:556px;" width="614" height="556" src="https://music.yandex.ru/iframe/album/5307396">Слушайте <a href="https://music.yandex.ru/album/5307396?utm_source=web&utm_medium=copy_link">Легенда</a> — <a href="https://music.yandex.ru/artist/41075">КИНО</a> на Яндекс Музыке</iframe>
+<iframe frameborder="0" allow="clipboard-write" style="border:none;width:614px;height:556px;" width="614" height="556" src="https://music.yandex.ru/iframe/album/41119099">Слушайте <a href="https://music.yandex.ru/album/41119099?utm_source=web&utm_medium=copy_link">Начальник Камчатки</a> — <a href="https://music.yandex.ru/artist/41075">КИНО</a> на Яндекс Музыке</iframe>
+<iframe frameborder="0" allow="clipboard-write" style="border:none;width:614px;height:556px;" width="614" height="556" src="https://music.yandex.ru/iframe/album/10243">Слушайте <a href="https://music.yandex.ru/album/10243?utm_source=web&utm_medium=copy_link">46</a> — <a href="https://music.yandex.ru/artist/41075">КИНО</a> на Яндекс Музыке</iframe>
